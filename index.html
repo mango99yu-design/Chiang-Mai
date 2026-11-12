@@ -1,0 +1,1264 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>清迈母女行 · 随身行程 App</title>
+  <!-- iOS Home Screen Web App Meta Tags -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="清迈行程" />
+  <meta name="theme-color" content="#0f766e" />
+  <link rel="apple-touch-icon" sizes="180x180" href="data:image/png;base64,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" />
+  <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAn90lEQVR42u3c53IbWZbgcbxA08t7RyeSMpS3pbLtxuxbTLckkgAShkaW3nuCQCZIqqrajNnp2X27/aS955zrMxMAJQIgCTL+oWDFfOmI+cW5FweZjPzGeRVQgvXaKCnrU6X0+qG0v4HfDPoaYkWNhmUx9fuIXqyO9UZVz4vXv4Ua9N7FG6n38SbqA9QMOezfFupj/BhrNH4ccti/J8agk6JTrPH46QnoDHYWip2bZMVZ56dYsQvYxWno0nT80nTs8nTsykzsymzsKi96bTbGap3jtUFRVvtcrH1etBDroBaDWqJf4qolp12VaGMt81qppeS1pdS15dRV0RUofXmFNXhpWTbEurgCXVgZZp1fGTm/PBIpr4zBMst4G5cFyJA4DBmOIYPj2IWMs34Z04aMK6aMayijddbPImqA4EU7F1kxoyUqbtXBc6j25QQliCRbMYaD4j5W0lcQB7TMu7QydGll+CImfUR8LEqQkSqfjJiPRYCMuoIyGoJkNAkZzcgiTMaJcBlnuIx4iAxgIWXoLKQMxWLeYhHtlKGG63pLVNxoOd7JcyCGY5kniCTbVnitK4rI1ZU0hUQGKYQyZPhYhSJ7ICNdmoyhUmTESpFR9yauy6hXLByWMTa4DMeSIQ4U5zhly3CYjFMT5tiYLCLjMsnwD4xZa1pEO+Y5i06NxXWWZqILinYtUTHVMnQdimMOq3PF4Uo4kUT7CivZbvpoXUldW0nLQMkq+Ri6jIGP1eGLmIbDLyNZVMbXXTKGfCxsGYEsAmTUazIUDk2GwqHL+OgAjjFbxkmSMb7HMtr5wOAyDBPAIso1aHUvUTHVMtTFi/NW4tchh4VKEp0riQ5MEVllpRgOLN1KPlYZDvSxOsR9rDIc0gcdK1W+ZEgZsVJk1JUmozFcRoshw8LBZDjFZMQZi5JkiKNEsAAZFouuBU2DDFn0QDFoWdXNi0MrUJeIfCCRBMWJrCbbV1Nt1AoEPlYZjkHWVQx8rAKOyxzHCOKo/iWDWOg4QmS8DZBRr8ngON7LseEoHB/1seFAfhnjXIZxoEwyHHHCcX7SLyPuk8EvGfrA6OADw8diQTPBNUR7llU3ZCtQDxSDlmP0C/nAnC7WKnR9VRHpWE12AA4qJZUwHK2Ig/tYkz6GL2EX1wBH2WQM7b2MuoIyGoSMRsGiibOQMpwWkmEeKCfGHCbj5LjvQJl0pAw+NriMuJJhfDAJOEr0gaGxGGAZJqCBG8uUYnGTtQKhjxhvlf/CrTAcqyyne5X74ERWE52rSRkoWSMf6TbAIXysAQ70MXwZu7TGsnDs8fWzlEuGXdhRYuN4x3LqDRkOl/HeUTg+6jiUDHNsSBnagTIZKuNCuIyQmeEfGIzFQLdugloeuAlFVStBrcZkoGQ1zuoRKSJrCYYDS14nH2vJDoj5SHMfayzAgT6GcHgMX16DmI9INXZcgTLidbuXoXC8ZxWQ4ZCMllGUIW4bJOPEuG9soAwdB8qIB8iYMWXMBcvwsRiwWNxcIhYg49byAG9FLwqtGt1cRShrTEncILIW715zutcSXRQRWQMcnWupDqx9Ld2GoY+ha2tDV7ErEPcRqer1s5iMt3GrcBkOlyFxfPThEDK0saHLcMJknAuScbkEGZ2FZNgspInb1Iosylu1it1irUE3eUhkzenBuuHfRDcGU2QteX0t1YmBj3XpY7AVGrq2PnR1nXwMow92rFTz+illxEuRUWfKqNdkNBAL6iOXIXAkSIY1No6PgwxjbIAM5zTKOKPL4DgglBEnGXigxPW9uL7JsI6SbpRBA0OxWCIQ/bqJXtZq0aK9a9HbazFKIxIHImsOBUrWne515iPZhXEf6xxH+9pgG9a6PshwaD5GdBwV23EFyogXOEp4JguOg8tIKBwfdBkJjMtoUWMj4ZPhmDLE2JiiseHImXFpRsiAsRG/WpIMHBiLvoGxRCz6lQlg0X9HNcBbs4pSvSJOZD3Ousn+BSIO68Y61MNwrCe5j/Xk9XXAgT7S3Mc64NB8DF+BOI6K7bgCWVg4gmXUFZKRkDK0sYEyRlnG2DgGMnw4JtjYcOyxQTKmnPMo46KQcTlYBt9nyI+shgw8SgwWKOM2S7C4s8JN3OUN8NZY/dgAbz3KurOuEVlnxW5DcQp8ABSGI8HiPtYBh/CRZoEPSPpgOIavYsxHpHqXjN3JMHC8h6QMjuODjiPRZMoQOAJlQKcntLExFT87RTgMGWpsgIz4tbnYtSIyoiEyiEW/YrEiTfTfk61ZDUDrvLs8piRG9Yq4j3WHdRNxgI8N6SN1HevcSHdskA/A0bY+BDg2hlkajupcMnw43haSUWfKqNdkNEgZHywZ5tgYSwSMjQmBQ46NKUfJmBIHyowcG/ErMyDjqpAhDhT+RZpPhnHJsAYGZ7EiWfQxE/epNdUDaOA+a13FlWxE727QIIndJSUbsV4ofnvDET6cGxsJlvCRAh8brLTmYwhwbEDSR6SCO64wGfHdy0jUSxkfWHJsJEhG06iFI6HLUDgmEiyJQ8o4O+Wcwy5MOxdn4hdnJA6QAWNjzhgb9EyG/MZEfTYJkdHrk4Es+ojFA66h78E69BDqpx5oAZENVpT5oH/vseNmI8a6sxHvxbiPDecm4rixkezZwOGxkeoCHDA8wMf6YPsGa6htQ/nw4yjrjiv+mwAWLKcwC4UjWEZCjI1Eo5AhcZCMlrGEPTYmpIyEGhtThAOCmcFCGReFDD425tTYaCMc8+qbd/F1CWw/5Q3UJ0Nn0Y8s+gQL0qB6tN7/aIP3UMZ8bAxoCR8b5CPOfWTQx4b0ATjAB+IQPgY7MOajTfjA4TESqeCOK0yGU1RG3XtDRr0mQ+Bg/3IW5tgAGTaOCVbCGhunTRl4oHAcODacyzgzAsbGvO9AUTKixWQQiz6dxSOtx6wNo0esDEEZkIGPTPQ+FLuHwwN8ZAAH+kjc2kjcxG5kkj0Z6SPNTpbrmXRnhuPgwyMzzJI4Knz9FL0tVUadKaNek9EgZDR+9OMwZBwbRxwow8AhZJyZStCBgp9Q9LEBMi4LGdrYiLfN+w4U7Vs0ueOiz6u6DDUwiMWaYgEg1l/jv31PNuweZ/qpR/TvxgDrYYYVfYCRj3uZ2N0M+XBY4COTuAklbwgc3RvprgzH0SmHR2a4jXBkAEflr5+6DKcUGXW6jA+QhoPLsHGMJZvHfGMDWWgyEqcmaWwkzkD8qoGLDcLhXMJIhjY24q3zXIYxNvCZDBob/Kohlp6BMh4IGYIFM/H6CQQOnkKvjTJ9rCdQPyWgDDzKRA0fgIN8IA6I+7gBPlI9DEcmRTjU8MgMtSsc7M6Rrvz109FkOKEslIxEiIwkS8poHJU4krqMFjk2JpI2jkkaG4nTMDNwbEyDDMLBZHAcs9bYABkShxobQoYaG3IjLm6g8lNJoAxk8frpOjfxjJXR69MDKJv9T6CBxxkIfGxGH2DoI34Xcu5sch+3uI/kjc1UTwZwdGfU8OjIDHUAjiHC0RqEo0w7rjAZTlEZdaaMek1Gw8ckl6FwkAwTxzgraeOYJBwJGhsMB5OhcMwIHLMwNi6rsRG/Nu8bG4tR8WyfGhvyGxMaGwVkyIHxdN0w8Vy2qdf3PAM924SYj6fSx+bAo03pI3Y/Ewcfm3GGQ/hgOJI3NxkOHB4ZMTw2B1mdAgcfHpsWjsHKXD/Nwo8SklFnyqjXZOg4SEbTmI2DZCAOcaxMggzEAZGMs9MKx4XpBOCYBRmEQ50p8/bY6MCHxe2xsew7UPwyrIEhWBCIbzKveJuvZS8w+h2UbPY/w7iPTekjBjig+L1N7qM3k2A4bm8mb22SDzE8Nge7NBx8eGwyHCORalwydBlOURl1pox6TUaDHBsMx1iSMnAoGQLHJMfBZRCOaRbJSLDgwjFr4XCuzjlX5+XYEDgW453qkWAcG8skI0pfvvMDRaw+abtVWAaZeEFtQt+qXn+bff0C6vtmE3oO86P/Wbb/aZZ8RFngI8t9EI67MDwSvZsMR0LgwOGxme7eTHMc5GNzqH2T4RhpUzjKe8koICMRdpTwPkCSBSVkSBzJxtFkAI7xZAvKUGcKl5FkwYGCMs5MSxwJjgPHxsVZeaY4V+YAx7V560yJd4g3Cejx4O4l/mwfl7GsvkuTONjYeGheP5+qgaFYfJvhIL7Ty0LMBxLpIyLPsyzyMUA+HmUBh/DBhodzN+vcySocwkda4hA+CMcwS+Ao+44rjEVJMupMGfUfLRwgw8YxzmUYOCYJB8lInha3DcJxDgMcMxYO5/KcD8cCyjBwiAf+dBz45btfhj42nvoGBrDIvCQN32df/QC9xOA/v8++/g4DIjkcIVnpYwB8ZKOPs9wHx5EFHOBDHx7ZFJwsiIMPjyzhGO5QOKpwyZAyEgWOEimjTsr4yJM4pAwDxzhk45gkHMkTKANwTOk4koBjhmToF44EybiinSmtCwxHHMdGXL6D1EXPiy/HdBm31dgYuBd0oPhnBrJ4iSxesn6U5aAfcmQFieQg9NH/TbZfwyF9sOERf5CN389yHxxHNnkrmyIcanhkGY4hhqNT4sj6cez9jquAjMTXyGj4mJIyGoWMJpCRMnBMQIgjKcfGqSmBA2WcRRk+HIlLc2pscBwoQ8dxXbxu1A3vEIixsSJvGwOaDH1s9D3Bj6zPbBk0HmBUMBM/UTnVj7lXLKbk+9wr9NH3ba4PfOT6n+f6n+W4j8fZ2CM6WXQcWac3m7yNCR+II8twDDEc1yWOrB9HhS4ZWn4ZH6wMGQrHaIpl4wAWKR0HyTg2kSIc/LYxJXEkz4CM5NkZE8ds4uIck+HDseC0Ljgkg184ljiObh3HisCxKnCsKRyPxOpTP1B0GXSIIIs//zZHvZQBEfel8CFwQLqP6JNs7HEu9ignh4eDPhJ3ssleHUc21ZNlOAa7IMIx1JElHMOR8u+4Qli8Iw2hA4OxoHQZiCNFMnQcbGAwGTYOIYNFB8rJKUjgSJ4hHDMcx3mB46LAcVnDwWToOODCsUQ44mJsxG6IB8QRR5TjWBM45NjY0HHwe4acGTQwfosyfof9HoPf3Ze/xYSP1+DD5T4EjujTXPRJLmriiN/LJe7mEnAttXEMdmM0PDqzHEc7nxzl3XEVkJEoIuMjZOJQMhr0sYEyDBwThANkHCccU0E4ZiwcSRgbFo55NjZ8OBYJR9yPg8tYidITfnfxUR0xNvpNGTg2xKcSXYY08QdX9XuX+SAir35y2fny+gf39feu9MFwDMDkMHDEHuSc+znHxpFL3cylb2RZg+SjKydxjLAQR0WvnxaLZFEZJo5U/agPxxgrZeCYYBEOIYM1peNIMRmnp2FsmDiS52d9OOYZjoSNA/88Bv0dBI5jGc8UjiOKYyOKMvQzBb5NtXHAXouPDUsGgfij+yfIg9DHy9/x4fHqR/eVhqMfThZ34Lk7QMOD48jFBQ5H4cgBjlu59E2JIydxDOs4KnzJ0GUki8pQOEZTlIEDZRg4JiSOVAvKwLEhcaROYUyGiSN5bhZkcBxzAsd84gpGOJiM1kWnbZHhcAgH/kEEeK1Z4IjdXIndwtcIevnYIBwDgTho6Uljg99Ac/w0+b2Q8U8sj/dH78/ch/fytx4ODxeGB8fhGjhgeLjxR7n4w5zzQOLIJXpzyd5c6rbCke7JSRzDndBIR26kPWfhqJCMpCrokqHLqBMDIwAHsjBwTEgcKT42JiHCwWRwHNMWjtTZ2SAc8z4ci6x426Jj4FiWOGIcx6qFA57qe7AOD+k82lAXjueZPsIBY4NwwJWTyXhJY4Nk/LP3b/+C/TP4+DP48F7+HnDI4dH3vdf3navjwJPFjek41Mli4cj5cOT8OMqy4yosI1lURp0po16waBhL2zgmCEdayjg2qeNIcRzT0Ofd/1xbJByOwoF/IaOL44hzHKs+HOsBOJ5l+p7jVyTfajh+ws8jEgcbFQwEY/GvEPsF/hNx/JnhgOFBk8PjOL7VcbgxDQeeLC7hSBo4chLHEMeRgzQcFb1k6DKSYUeJlFE36sPBZZg4JigmI00HCpOh4UgzHJ/37gdwLOk44A8i9OD7zSaO6N11Hw78tp1wvJA42CfYnMQBZ8of8RzBsfGn/5X/NxbgyMPwEDhe/dZ9/aNn4eh/7kafuVEbh8twJO7lkgqHK3EM9uSGOI6cjuNNpMw7rsIykkVl2DiUDIFjHCIZTSADcUwqHJ/L+XN92aG/oNK9YuGI4YXUhwOfzXmCOL6ROLJ8Ta4mh6tPjj/B5Mj/6V/ygENMjleAw/Ph8AYCcLgMR8LA4UocgxyHO9Tl6jje6Dgqc/3UWSTDj5IksbBxjKXrlQzEMU6lSUYz4ZjkOD5X6qdrxcIB75/1rhGOqIZjQMfB7hwv8CuS77Kvv8++Zjh+zL0CHC7HwRywOQE+hIx/yss7xyu4kJo4XngDAThchsMxcLgSxyDH4Vo4RgCHy3GUb8cVNjBYKSx0YBg4xrgMA4eQwWoeBxnNk0wG4PhcjR+FYy0IBz4J/Aif7RPHCg6PbJ+O4yf8mPo7/EjCfeRVXEb+1e/yBg74tOIN2Dg8wuEQjntuQsggHGmOwxU4+LEy0umOdLgcR1l3XAVlMAfFZNSZMhSOccIBMpoIxyT0udo/N9fiNg58u4RwPN4gHP3PNgkHfO3Oh0dOx/EScbz8A348kaGMl5aM773+77x+gSPKcTAZnpSBFw6Gw5VjI32LcLg6juHrXAbg6FA4KnT9tGSkisqoM2XUcxY8ktGEY+PzfvqROOBFNHydhE8O5iMDD34+2+x/vtmvcOAi/Afug9002ZUCPq+y/qBFM4NuGwJHv45DynjixTUcifuexJGSOEiGwDEMOFwLx0glr5+WjFTgJUOXUWfKqFcyBhuEjKZ9JkP5wPcTDRwZwjHwlPsQwyMnfbzmPkAAfF5FJa/gBspZaDLy1tgYeO5Fn3kMRxxwyDPFkzhSiCN921M4etxBJgNwuIADfbwJxLHnOy7/JUOXkQodGCAjTeky6jkLqHG/stB/GI5761E8VqIPM4RjQMPR/01W4uj7nnywD6j41YkgogcsfDLgKsrPFMAREzgcwOEhDjhWkhyHl9YnB4wND2R0uSNdGo52922kzDuuwjJSYUeJlFFnyqjnLLB9L4N+8NoBr6M9wFePlA98tu85PsqFPvrAB35Xgj6ICNfwk8ZCl2HcNgwZ8UeekOHpMlK3OQ524Ri64Q71eMMSh5gcbzu8txJHJS8ZeumiMrgPIUPhmBj8fHB+BI4o4oiaOKBvsv3chwuhjz7Wj0IDN4Es5D3DPFBiKANuG3jhcASO5H0vyXF4ODb4mQIybniIgx8rKMN70+kpHBW+ZOgy0sVljEO6jIaDJoN+7m/E7mdi3Ae+Q4A+Bp5lB57jc1zfwNeq4IOIfI/fmLB+0PreZKHLEDji/CqqxgbK8FIsjkOODZABZ4rCATLedEgcZd5xhR0laS37kmHJqEMWUkbDAZTBfRAOfHUA3zGJch+5gef4nA76gL7NwbrzO6hPpVjwgfEiX0jGQy/Bx4aXFDJSODYGAYcHOG54wzQ54MLhvbmujY12912k4peMtCkjHXaUSBl1GouDK0P52JQ+GI7ok6zlY+Ab/H71Ba7DVTgn5LSggYH3DGChyxAHSoKPDc8cG97gLU/KQBw0NlCGjqPNs3Hs+Y6rqIx0URn1h0UG/dC7ig83Y+ADHvZUPoAIfq36DUZEXggNL3wsgmSwsZGQMsyxATIkDvKBY2Ok25NjQ5wpHsPxPlLZ66dfRhgLJaP+EMkQPmL00tEjfIeAiDzNwhM6zyCNiBfFOAhagD43BoY1M7gM60C546V7fTLwTFEy1NiA3mk4yn39HA2TMVhURv3hkhHkI8Z6gs9uPc0pIs9cpKCHOy6LRYCMfNI8UNLyQMHk2AAZ+tgQOECGwFHGHVfIwBglFoMGDo1FnWAhO2Q47uO7zg/IBz7s+RhTRNwY6xmuw3l8jQEmTBZwAw2SkeQy8vxAua3JuJEfkWOD48i/6cgzHO8IRyvgqPT1Uw4ME0fQwDisMoSP+INNeG/gIUvzAURcFSl5qu0wfCzg+mmdJogjTTJ6TRk3veEb+WF7bORZ74SMMByVuGQM2tWeDO4D3yjhPrJxHCHwBMZjXox6Ir5Ie+yJ/xOaMFkYN9AgGYgjz2UYtw2Q8bZD4XjfmociVZbBD5FQGfUTQ4cYx72scx8CH0Ak5zzEp/oeyVzKMRLbT8nCHBhFZGgHCuJAGcbYQBnXDBzl2nH5LxmWjKEQGUOHW4b0gUTi9/EZcYorcSnHiLNwdBZhMowDhcvQDpQ8yLgOMmBstBOOPB8b1/IfItW4ZFgyhgIHRi3I4N/MZeG58Hv49gAFRFwqIX7BzFHhYwHXzzv5YBn2gYIspIwOIQNxfLgGfYyUf8dVVMZQoIzawXEnC6+T3AUfCa4En90y8mRowoVvTGwWNDDws0mvOk2GA2V0CRn8QMlDJINwXEUcVblk6DKIgiljslZkSB9ARCnB/9/js31mSRmZkDsu65LBZeQDZYxoMvBAETLahAw2Nq5uWTjKsuMqRcaQPjCYjIrh+H/x44WrzP+MXvzLCHfgvQF4I+2unitL8ZQJvhfvFQtQ/Si5JVgEylAHiikDcGyBDHNylGvHFXCU1BkszCYrhKMoi0oSuc1w5KgUC5VgrizFUyYoY1roH0xsGflQGYhDyvhAMq4oHBW9fvplDFdSxq5YVIzI7VzyNr6lSD563aDUnEhbIBQL7ZIhP7WijDchMvSZwcfGFcAxGqnIjquojOH6yWEpo3w4vphFBYjcyqXxzyKAj9uuLK3ytNxB1i3t6xLqZtBRUlRGmykDx8aojqPC10+/jOEDIaOsPm5m4eXVWzI3LHhaR36/KpbiQxaLXcjYCpBxeWssUpEdV6CMYVOGxDG8z2WUz8cNxCEa5LlWQ5BnF8LCuGSEySAclgzCUa1LhiVDNDW8/2WUyUcPvrl6A99857lW8gmuIe1priGbBf9U8saU8U7IeB8iA1hc2eIyLikclb9kBMgYYTJqHEdPbkiFbxwpFvAaAY8e1aGndSwW+o5LDozCMvBAsWUIHFW7ZFgyRg6QjDL56MY/ldGNfxOB1cODJz176GFgj//S4w3bJujhDLEXDzlKgmVc9cm4CDgqtOMqPDBUB0hGOXx05eBPIVDdvGFZj/a7bYKe2dG+MZEsLBkaC+M0sXFsT0QqteMqScYRjuvwqjvUJXN5gsUIvkagQMhnMuRXrOY5Enz9FJ9NAmWMX9welziqdf20ZRzh6BQ4rudGIPGKYpdKAyHjz2Sor1jld2lqYIQcJZKFJeMC4qjYjqu4jPrpkYMlY899wN9Oob+ggn8qg5JErpsmOil9VBgs3rVpOy55lJQoQ+Co2vXTllE//abGcXTgn1yCxN9B6JRJDd5bWYc+KqggFtZRcjXoknFp25BxHnBUbscVzgJkvNlbGQcUB/tpx7/H1e4qHxC+NBCUMMGf1uEP7MivSySLgpcMkjGhyzi/ZeOowiVDyjjCQT9t7ps21/QhKOArrBi+XaJM0Jsm4jmuVuOLtNCBYR0lhgxoKlJlGdNKxgE9U/bcR2vubVvubbvMtdI0yMSDn4pFXp8W4QMjXMY5DUfVLhlHOOzJgTgg911AGotWSpNxTTzHpbHgX5f4BoZ9ybiAR8n57clzKEPgqOCOy3+UqGaOcPDJAbnvAvLetUoTQsY1HprAx/s0FsYXadrAGLMGhl/GWcBR2R1XARlHOOjnWu7dNfc99k7lUe+15JzARz61rqhGL+dtFtbnVesokTKCcFT2kqHLqJ95e3QhZT9X3fdXOQ4RUdC6yspTgSbCWIxd3PINjBAZZ3amIxXecRWQcYRDx6Hy3l8lDbK8knHFEykTyCLvZ8HysfAdJdAOyDBxVPz6qbOQ1TiOK+4H7D3PY30ISbIgELKxS3k/C+Mc4TeMgjLO7MxEKrnjKiqjfrbWcVzOfeC50BX3o5H38TJvlKexuAQpGdwEdsE/MLYYi0mDhZIxwzoNOCq44yokY5ZX41+8aTI+2lksPNIg4yx0E8BiK4BFwMDYVgPjtChSxeunX8YRjku5D5dc1kcjTzaq0mRczI9BhgnKx6LQwDBknPpk4Riv6PXTL6N+9l2NPwl20f140R2VXXJHDRDe6EWKNPDGIcMEpkwIFkLG2YCBYcs49Wk2UskdV+AlQ7Kgah7HqJHU4I3xDBZjF/LjkMniPGSaCJJxZluymJYsTgML9u/saYWjIjuuojLq56CafcD4gjtq5MnGeHkrJeO8ipuwWJw1Bsa0lHHaNzBIxqlPc5GqXzIsGeXAcVDeWznvjp13RymbhSnjfH4cskzkWRoI0VlDBrIoKOMUyji1w3BU+5KhszjCAXmycVVeb8LqHM80QQkZZ2wWSsYpkDFrycDJUdkdV4GBIXpfppcN9//rkOfcsXOebDykCSjvSwdhyJg+o8dZTCsWOzqLWWCxM3fyExSp7vXTL6N+Hvpctp/9yYL9nM2NAQ7eOK+YjLOUn8UWGxVTOovT28Es7IEhZJz8NB+p8I6rFBllxfF5v/4JhrPuuJ2nNwHl/ZkgKD8LTQZnIWQYA0OTIXBU9frpl1EBH5/32R9vOeOOYxOss5SnNwnl7c7khQY9lHFaTxwligXKOMlZzFoDg3UCi1T9+gksfDIqgKMUJRX73yBl8Dy9SSjvy8fiNGt76rRPximLxQ6wOPlJ/qccGPO6jBOfFiLVv2QEyahf+MD6XBs/p93x0+4Ez4NKkXHanynj1DaZUOfISZvF7ElTxgnZzwusyH64fgbKqCUchgytSShvVYgFgNie4VksRAaLHR+LT8DiOBbZP5cMS0YDduhlnHIneZ4qhIUh4xTPBKHJOAnNhsRYzPtYGDIEjkpfMkJkLNgyagiHpzcF5f1NAwUrU8bJbTKhydjGdmZPKBnzJOOET8bxn/UWI5XfcRW4ZFgyGhZZHw+xjJPu5EnPKkTGVoCMk9vTJwmETMpAEycoNS3mSIaPxbzFgnXMh6PKl4x6gwXIOOQ4fDKgvC/mwJ9fBk+YQBYn5N2CmaAsFr6BcYz6ZSlSlR1XgUuGJeMQ+zjhTYkm6ZcAFvmCLLagE9Q2RSzmoJ05koG/BMg4bsuQLECGjqMa18+FkmQ0LEGHTYY7pTV9wtPKs6aw6YC2pk9IEJA2J8iEkHGcs5izWBxXGYeIJUPiqMKOq8Alwy/j8OE47k6Jpm0cnMhMQKRBT5NxXBYk47idj4UpowVwVG/HFXbJ8MtoWBplHUoZkOcrPyPTZRzfmjXalgWyABnHd0pj8bPBoiUUR6Wunw27kQEtHwYfx9wpKkTGjC6D52ex5WOhycBf5o/bMhYwnwltYLTo/WrhmN4X10+NhSGDOuAyplWe0dfIOMbagY7rMgwTC8egUBktPhkmjmrsuArKGPXLwMYOqIwWzmIG8vTIx8yxvK8t1qzRtmxOZctYME2Eymj5ZTGQRcuvy82/rkSqvuMqepRYMqCVsYMoA5uBPMjwkZ/1VaKM+WPyBCEWOzoIkZ9FqIxlkiFwVHXH9QUyqAMtwyg/Sxk4QMOckdQg29Fb4NkyfCa4DP9RwkxwFgLHvr9kKBkrdgdCRrM73RzGwpuVMlRbrDm7bWpetQOVIqPFyj8wfiEWhozmv/hxVGnH9QUyGlbHqf3NAmRAnmp3MrZLk2GyaIF8LGwZy8AiRIYPR/V2XCUeJX4Z+9YHN+GTwcvP6n29jBa7wjLQhGIRIEPDsQ92XF8sA1qD9gmLJndGNNvM8qhQGbwt1pzRtmyetwO1qBYgv4yfA2UsKxNhA0OT0fSX1ci+2nEVP0rCZTSsTbD2lQzI4wkic835ueIstnwsbBkLITIsE0vQL0vNFotfCg2MJpSBOA7O9bOoDN76xL5ioTXXlIea9bbmvlBG8FGyRDXLSpbRpFrVceyvHVepR8mqjwXKEE1WjEWjO9NYsgyjLdY8q1mmQCyodiAxLRahT0bNkAaigIygS0aTX8Zfocj+3HF9vYzK48BmGwNl5AvJUG3LFlQ7HAe2CH3y9fOXyGiifAODZJg49tmOa3dHiU8GtDFZeRmNnuqLZBgsmiwWATKWQmSEHiVNASwCZAgcB/2SESKDqogMm4VorjEPFWGxtzJCLhlN0C5kII59v+Pa1VFiyagIjiIyjEo+SpqKHiXFZDTJSpHxV39rkQOx4/piGQ0bU6wqyMgHy2jcmjfahvZERhPrl6Um3YRi8SUymv7GcRyMHVfpR4kuoyFTPhx7IANb4O1ATapF6JMvomBlsQgcGL8WP0qIBRU5WDuu3cnI8BrL4CNERmkstnwsbBmLITICWZQm4y+7k6HhOFA7rmIypiwZjXvtY1eXjC+U8anKMhDHgd1x7UpG4+b0XuL4YhnbZZbxdZeMwjgO2vVzo1QZVLlk5L9KxpdeMnYro9SBwfv7euRA77jCZDQGydgTHzAheF8mYy8uGT+X8SjB1pv+vsGKHPQdV+D1M0zGnuJgzTfm5w/N9VOw4DIkjgO84wo9SjLTfhmNWdbMnsrQq8Yl45c9uWSs8zQZhOPA77gKXDL8MqivlZGfDwg0LGAH5fq5bmTKQByH/ZLhl/G1OIrIEHEN+23HtW6b4DI27P7dj+Ng7rgKycjaMqDczBfJKI2FkrGo2lms3iVjTbQLGc02joO84ypwyfDLwGYrK0OA2FmCPlHlkLHG+6tVIItQGc3/nokcmh1XSTJySsYucezqKClRht5y08++gMKKkQKxqvqLXiCLXchoFjIEjsOy49qVDMidLUlG/qtkNBWV8fOeyNjNwPhboYEhixzC62e2VBkl4didjIIDY6e0gfGzj8UvpQ2MPZWhcByaHVfhS4Ylo6iPvbxk7HzpUbK3Mv5emoz/gCKHb8dVZGCYMhrdOdaXyyj3JeOXsl8ywmQAjkO549qVDHarKAnH4bt+Bh0lUkbzf2xGDuWOq8Alwy+D2gMZO19z/SxhYPxa9kuGLgNxHNId165kWD4O1SXjb7s7SqQMieNw7rgKHyW+yrHjOkjXT0tG838CjkO749p7GYdrxxUq4z95kcO94ypJRq3uuPyXDF2GhuOQ7rj2Wsah2nEVloE4DvuOq0KXjJ3DcMkwy0ZqYce1fy8ZVd1x+S8Zuozm/+I4DvmOa28vGYdmxxU2MEgG4aiJHdceyDh0O65gGf+litTOjutwXjL+tpeXDF2GwHG046rJHVdhGYjjaMdVqzsu/yXD6H/nIkc7rprdcRWWoeM42nHV3I4rmIWQIXEc7bhqccdVWAbhONpx1eiOy8fCkIE4jnZctbrjChsY4TiOdlw1s+MqJOO/ocjRjqtmd1yFZTT/txs52nHV7I7Lf8nQZQgcRzuumtxxhchwZZGjHVfN7rjCBkY4jqMdV83suArLaP6HheNox1VLO65QGf/gRY52XDW74yoso/kfXuRox1WzO67Ao0TKQBxHO65a3XEVliFxHO24anHHFcRCyWj+H8BxtOOq0R1XYRkmjqMdV43tuAKPEmJh4jjacdXejquwDIHjaMdVkzuuwjKa/ycfOdpx1eyOq7CM5v/DcRztuGpxxxUiI08yCMfRjqtGd1zBA0PI0HAc7bhqb8dVWIbAcbTjqskdl/+SYRU52nHV7I6rsIyW/7v1/wHm3HSb9RTniwAAAABJRU5ErkJggg==" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", "Segoe UI", sans-serif;
+      background: #f5f5f4;
+      color: #1c1917;
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+      padding-bottom: calc(84px + env(safe-area-inset-bottom));
+    }
+    .wrap {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: calc(12px + env(safe-area-inset-top)) 14px 16px;
+    }
+    .card {
+      background: #ffffff;
+      border: 1px solid #e7e5e4;
+      border-radius: 18px;
+      padding: 16px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+      margin-bottom: 12px;
+    }
+    .hero {
+      background: linear-gradient(135deg, #0f766e 0%, #0d9488 100%);
+      color: #ffffff;
+      border: none;
+    }
+    .hero-pill {
+      display: inline-block;
+      background: rgba(255,255,255,0.2);
+      color: #ffffff;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 4px 10px;
+      border-radius: 999px;
+      margin-bottom: 8px;
+    }
+    .hero h1 {
+      margin: 0 0 6px;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 1.3;
+    }
+    .hero p {
+      margin: 0;
+      font-size: 13px;
+      color: rgba(255,255,255,0.92);
+    }
+    .banner-ios {
+      background: #fffbeb;
+      border: 1px solid #fde68a;
+      color: #92400e;
+      border-radius: 14px;
+      padding: 10px 14px;
+      font-size: 12px;
+      margin-bottom: 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+    }
+    .day-scroll {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      padding-bottom: 6px;
+      margin-bottom: 10px;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+    }
+    .day-scroll::-webkit-scrollbar { display: none; }
+    .day-btn {
+      flex: 0 0 auto;
+      min-width: 112px;
+      text-align: left;
+      padding: 10px 12px;
+      border-radius: 14px;
+      border: 1px solid #e7e5e4;
+      background: #ffffff;
+      color: #1c1917;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+    .day-btn.active {
+      background: #0f766e;
+      border-color: #0f766e;
+      color: #ffffff;
+      box-shadow: 0 4px 10px rgba(15,118,110,0.25);
+    }
+    .day-btn .d-top { font-size: 12px; font-weight: 700; opacity: 0.85; }
+    .day-btn .d-sub { font-size: 13px; font-weight: 600; margin-top: 2px; white-space: nowrap; }
+    .section-head {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 10px;
+      border-bottom: 1px solid #e7e5e4;
+      padding-bottom: 12px;
+      margin-bottom: 12px;
+    }
+    .badge {
+      display: inline-block;
+      background: #0f766e;
+      color: #ffffff;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 3px 9px;
+      border-radius: 8px;
+    }
+    .badge-soft {
+      display: inline-block;
+      background: #f0fdfa;
+      color: #0f766e;
+      border: 1px solid #ccfbf1;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 3px 9px;
+      border-radius: 999px;
+    }
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: #ea580c;
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 600;
+      padding: 8px 14px;
+      border-radius: 12px;
+      border: none;
+      cursor: pointer;
+    }
+    .btn-teal {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: #0f766e;
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 7px 12px;
+      border-radius: 10px;
+      border: none;
+      cursor: pointer;
+    }
+    .btn-outline {
+      background: #ffffff;
+      color: #44403c;
+      border: 1px solid #d6d3d1;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 6px 10px;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    .btn-outline:disabled { opacity: 0.4; }
+    .map-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+    }
+    @media (min-width: 768px) {
+      .map-grid { grid-template-columns: 7fr 5fr; }
+    }
+    .map-box {
+      background: #f8fafc;
+      border: 1px solid #e7e5e4;
+      border-radius: 14px;
+      padding: 10px;
+    }
+    .stop-preview {
+      background: #fafaf9;
+      border: 1px solid #e7e5e4;
+      border-radius: 14px;
+      padding: 14px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .stop-card {
+      background: #ffffff;
+      border: 1.5px solid #e7e5e4;
+      border-radius: 18px;
+      padding: 16px;
+      margin-bottom: 12px;
+      transition: border-color 0.15s;
+    }
+    .stop-card.selected {
+      border-color: #ea580c;
+      box-shadow: 0 4px 14px rgba(234,88,12,0.10);
+    }
+    .stop-card.done {
+      opacity: 0.72;
+    }
+    .num-dot {
+      width: 26px;
+      height: 26px;
+      border-radius: 999px;
+      background: #0f766e;
+      color: #ffffff;
+      font-size: 13px;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .detail-box {
+      background: #fafaf9;
+      border: 1px solid #e7e5e4;
+      border-radius: 12px;
+      padding: 12px;
+      font-size: 13px;
+      line-height: 1.65;
+      margin-top: 10px;
+    }
+    .detail-box div + div { margin-top: 8px; }
+    .backup-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      background: #f0fdfa;
+      border: 1px solid #99f6e4;
+      color: #115e59;
+      text-decoration: none;
+      font-size: 12px;
+      padding: 6px 10px;
+      border-radius: 10px;
+      margin: 4px 6px 0 0;
+    }
+    .muted { color: #57534e; font-size: 12px; }
+    .search-input {
+      width: 100%;
+      padding: 10px 14px;
+      border-radius: 12px;
+      border: 1px solid #d6d3d1;
+      font-size: 14px;
+      background: #ffffff;
+      color: #1c1917;
+      margin-top: 8px;
+    }
+    .cat-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 10px;
+    }
+    .cat-btn {
+      padding: 6px 11px;
+      border-radius: 999px;
+      border: 1px solid #d6d3d1;
+      background: #ffffff;
+      color: #1c1917;
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .cat-btn.active {
+      background: #0f766e;
+      border-color: #0f766e;
+      color: #ffffff;
+    }
+    .places-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+    @media (min-width: 700px) {
+      .places-grid { grid-template-columns: 1fr 1fr; }
+    }
+    .phrase-card {
+      background: #ffffff;
+      border: 1.5px solid #e7e5e4;
+      border-radius: 16px;
+      padding: 14px;
+      cursor: pointer;
+    }
+    .phrase-card:active { transform: scale(0.98); }
+    .bottom-nav {
+      position: fixed;
+      left: 0; right: 0; bottom: 0;
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-top: 1px solid #e7e5e4;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      padding: 6px 6px calc(6px + env(safe-area-inset-bottom));
+      z-index: 40;
+    }
+    .nav-item {
+      background: transparent;
+      border: none;
+      padding: 6px 4px;
+      border-radius: 10px;
+      font-size: 12px;
+      font-weight: 600;
+      color: #57534e;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2px;
+      cursor: pointer;
+    }
+    .nav-item.active {
+      color: #0f766e;
+      background: #f0fdfa;
+    }
+    .nav-item span.ico { font-size: 18px; line-height: 1.1; }
+    .hidden { display: none !important; }
+    .modal-bg {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.75);
+      z-index: 60;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .modal-box {
+      background: #ffffff;
+      color: #1c1917;
+      border-radius: 22px;
+      padding: 24px 20px;
+      max-width: 420px;
+      width: 100%;
+      text-align: center;
+    }
+    @media (prefers-color-scheme: dark) {
+      body { background: #141413; color: #f5f5f4; }
+      .card, .stop-card, .phrase-card, .day-btn, .search-input, .cat-btn, .btn-outline, .modal-box {
+        background: #1f1f1d;
+        border-color: #333230;
+        color: #f5f5f4;
+      }
+      .map-box, .stop-preview, .detail-box {
+        background: #181816;
+        border-color: #333230;
+        color: #e7e5e4;
+      }
+      .muted { color: #a8a29e; }
+      .badge-soft, .backup-chip {
+        background: #134e4a;
+        border-color: #0f766e;
+        color: #ccfbf1;
+      }
+      .bottom-nav {
+        background: rgba(24,24,22,0.95);
+        border-top-color: #333230;
+      }
+      .nav-item { color: #a8a29e; }
+      .nav-item.active { color: #2dd4bf; background: #134e4a; }
+      .banner-ios { background: #2d2208; border-color: #78350f; color: #fde68a; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <!-- Hero -->
+    <div class="card hero">
+      <div class="hero-pill">🌴 2026.12.07–12.12 · 住 Mai Hotel</div>
+      <h1>清迈母女轻松慢游 · 随身行程 App</h1>
+      <p>每天 10:00 从容出门 · 午休避晒 · 晚上早回 · 全程 GrabCar · 33 个收藏点全覆盖</p>
+    </div>
+
+    <!-- iOS Add to Home Screen Hint (hidden when running as standalone PWA) -->
+    <div id="ios-hint" class="banner-ios hidden">
+      <span>📲 <b>固定到 iPhone 桌面：</b>点 Safari 底部「分享 ⬆️」→「<b>添加到主屏幕</b>」，以后点桌面图标全屏秒开！</span>
+      <button onclick="document.getElementById('ios-hint').classList.add('hidden')" class="btn-outline" style="flex-shrink:0;">知道了</button>
+    </div>
+
+    <!-- VIEW 1: ITINERARY + MAP -->
+    <div id="view-itinerary">
+      <div id="day-tabs" class="day-scroll"></div>
+
+      <div class="card">
+        <div class="section-head">
+          <div>
+            <span id="day-badge" class="badge"></span>
+            <h2 id="day-title" style="margin:6px 0 4px;font-size:17px;"></h2>
+            <div id="day-subtitle" class="muted"></div>
+          </div>
+          <a id="day-route-btn" href="#" target="_blank" rel="noopener" class="btn-primary">🗺️ Google Maps 今日完整路线</a>
+        </div>
+
+        <div class="map-grid">
+          <div class="map-box">
+            <div style="display:flex;justify-content:space-between;font-size:12px;margin-bottom:6px;" class="muted">
+              <span>📍 清迈方位图（点击圆点切换）</span>
+              <span>🏨 = Mai Hotel</span>
+            </div>
+            <svg id="city-map" viewBox="0 0 560 360" style="width:100%;height:auto;display:block;"></svg>
+            <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:6px;margin-top:6px;padding-top:6px;border-top:1px solid rgba(128,128,128,0.2);" class="muted">
+              <span>🟦 古城护城河 · 🌊 东侧萍河 · ⛰️ 西侧素贴山</span>
+              <span>🚕 跨区一律打 GrabCar</span>
+            </div>
+          </div>
+          <div id="active-stop-panel" class="stop-preview"></div>
+        </div>
+      </div>
+
+      <div id="timeline-container"></div>
+    </div>
+
+    <!-- VIEW 2: 33 SAVED PLACES -->
+    <div id="view-places" class="hidden">
+      <div class="card">
+        <h2 style="margin:0 0 4px;font-size:17px;">⭐ 33 个收藏点 · 营业时间与排期总表</h2>
+        <div class="muted">已逐个核对 Google 评分、每周休息日与三坨土/欢欢/小红书点单攻略。</div>
+        <input id="place-search" oninput="renderPlaces()" type="search" class="search-input" placeholder="搜索店名、咖喱面、按摩、三坨土..." />
+        <div id="cat-filters" class="cat-row"></div>
+      </div>
+      <div id="places-grid" class="places-grid"></div>
+    </div>
+
+    <!-- VIEW 3: THAI PHRASE CARDS -->
+    <div id="view-phrases" class="hidden">
+      <div class="card">
+        <h2 style="margin:0 0 4px;font-size:17px;">🗣️ 大字版泰语手指卡</h2>
+        <div class="muted">点击任意卡片放大全屏，直接亮屏给 Grab 司机、餐厅服务员或按摩师看！</div>
+      </div>
+      <div id="phrase-grid" class="places-grid"></div>
+    </div>
+
+    <!-- VIEW 4: APPS & IOS GUIDE -->
+    <div id="view-guide" class="hidden">
+      <div class="card">
+        <h2 style="margin:0 0 8px;font-size:17px;">📱 清迈必装 5 个 iOS App（App Store 免费下）</h2>
+        <div class="detail-box">
+          <div><b>1. Google Maps（谷歌地图）</b>：导航+看实时营业时间最准。电脑导入 <code>chiang_mai_trip_mymaps.csv</code> 后，手机「已保存 → 地图」就能看到按 D1–D6 分好颜色的所有地标！</div>
+          <div><b>2. Grab（东南亚滴滴+外卖）</b>：国内先用手机号注册并绑定支付宝/微信，在清迈选 <b>JustGrab / GrabCar</b> 空调私家车（不坐双条车和嘟嘟车），明码标价自动扣款。</div>
+          <div><b>3. Bolt（备选打车 App）</b>：比 Grab 略便宜（付泰铢现金），傍晚高峰 Grab 慢时可同时叫车。</div>
+          <div><b>4. Klook 客路 / 携程</b>：提前订 12/10「新大象之家+竹筏+粘粘瀑布」一日游（电子凭证放手机里）。</div>
+          <div><b>5. Google 翻译</b>：提前在 App 内下载「泰语离线包」，遇到纯泰文菜单拍照即翻译。</div>
+        </div>
+      </div>
+      <div class="card">
+        <h2 style="margin:0 0 8px;font-size:17px;">⚠️ 出行前 4 件必办事项</h2>
+        <div class="detail-box">
+          <div>1. <b>订 12/10 Klook/携程大象一日团</b>（宪法日假期早订，选含竹筏+布阿东粘粘瀑布+Mai Hotel 接送）。</div>
+          <div>2. <b>预约 12/11 (周五) 13:00 A-Va Massage 两人位</b>（电话 087 659 4556 或 Facebook）。</div>
+          <div>3. <b>抵达前 3 天内填好泰国 TDAC 电子入境卡</b>，母女两人各填一份并截屏二维码。</div>
+          <div>4. <b>备好零钱现金 & 耳塞</b>：Khao Soi Mae Sai、Joost 果昔、寺庙门票只收泰铢现金；酒店在航线下建议备耳塞。</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom iOS Tab Bar -->
+  <nav class="bottom-nav">
+    <button onclick="setMode('itinerary')" id="nav-itinerary" class="nav-item active">
+      <span class="ico">📅</span><span>每日行程</span>
+    </button>
+    <button onclick="setMode('places')" id="nav-places" class="nav-item">
+      <span class="ico">⭐</span><span>33个收藏</span>
+    </button>
+    <button onclick="setMode('phrases')" id="nav-phrases" class="nav-item">
+      <span class="ico">🗣️</span><span>泰语卡</span>
+    </button>
+    <button onclick="setMode('guide')" id="nav-guide" class="nav-item">
+      <span class="ico">📱</span><span>必装App</span>
+    </button>
+  </nav>
+
+  <!-- Modal -->
+  <div id="phrase-modal" onclick="closeModal()" class="modal-bg hidden">
+    <div onclick="event.stopPropagation()" class="modal-box">
+      <div id="modal-label" class="muted" style="font-size:14px;font-weight:600;"></div>
+      <div id="modal-thai" style="font-size:30px;font-weight:800;line-height:1.35;margin:18px 0;"></div>
+      <div id="modal-pron" class="muted" style="font-size:14px;margin-bottom:18px;"></div>
+      <button onclick="closeModal()" class="btn-primary" style="width:100%;justify-content:center;padding:12px;">关闭</button>
+    </div>
+  </div>
+
+  <script>
+    const DAYS = [
+      {
+        id: 'D1',
+        date: '12/7 周一',
+        shortTitle: '抵达 · MAYA周边',
+        title: 'Day 1 · 12月7日（周一）傍晚抵达清迈 · 酒店 5 分钟圈轻松吃逛',
+        subtitle: '17:50 落地 CNX → 19:00 入住 Mai Hotel → 步行 5 分钟去 MAYA 吃船面 & 逛文创 → 20:30 早早回房休息',
+        routeUrl: 'https://www.google.com/maps/dir/?api=1&origin=Chiang%20Mai%20International%20Airport&destination=PLAYWORKS%20SHOP%26CAFE%20Chiang%20Mai&waypoints=Mai%20Hotel%20Chiang%20Mai%7CMAYA%20Lifestyle%20Shopping%20Center%20Chiang%20Mai&travelmode=driving',
+        stops: [
+          {
+            num: '1',
+            time: '17:50 – 19:00',
+            stay: '入境+车程约 70 分钟',
+            transport: '🚕 机场打 GrabCar 或机场计程车（3.8 km · 约 12–15 分钟 · ฿150–200）',
+            name: '清迈国际机场 CNX → 入住 Mai Hotel',
+            lat: 18.80289, lng: 98.96436,
+            cid: '8244194276610749566',
+            rating: '★4.5 (333)',
+            hours: '前台 24 小时 · 入住 14:00 后',
+            intro: '你们订的 Mai Hotel 位于宁曼路北口 Huay Kaew 路，地理位置极佳：距离机场仅 15 分钟车程，步行到 MAYA 商场 5 分钟，门口 60 米就有 7-11。',
+            howToPlay: '1. 出关前出示提前 3 天填好的 TDAC 电子入境卡截图。\n2. 办理入住时跟前台说要一间高层、不临街的安静房间（"Quiet room on a high floor away from the street, please"）。',
+            food: '酒店含早（以订单为准）；门口 7-11 可买大瓶矿泉水、驱蚊水、酸奶和明治香蕉牛奶。'
+          },
+          {
+            num: '2',
+            time: '19:10 – 20:00',
+            stay: '用餐+逛约 50 分钟',
+            transport: '🚶 从酒店平路步行 5 分钟（300 米）',
+            name: '玛雅购物中心 MAYA（B1 船面 + 2楼 Element 72 买 KEEN）',
+            lat: 18.80191, lng: 98.96758,
+            cid: '2634136185446806142',
+            rating: '★4.4 (17,889)',
+            hours: '每天 10:00–22:00（Element 72 专柜至 21:00）',
+            intro: '宁曼路地标商场，有冷气、干净安全。你收藏夹里的「#30 玛雅购物中心（欢欢推荐负一楼船面）」、「#11 手标泰茶」和「#17 Element 72（买 KEEN 鞋）」全在这里！',
+            howToPlay: '💡 重要省路提示：你清单里把 Element 72 标在了东郊尚泰百货，其实 MAYA 商场 2 楼就有 Element 72 专柜！吃完饭上 2 楼就能试穿 KEEN 凉鞋（正好第四天去大象营和粘粘瀑布穿）。',
+            food: '🍜 必吃：负一楼（B1）美食广场船面（小碗浓汤面，一人点 2–3 碗）+ 商场内 ChaTraMue 手标泰茶（点少甜 Wan Noi）。',
+            backups: [
+              { name: 'Element 72 (MAYA 2楼专柜)', cid: '6528584468940134037', note: '买 KEEN 鞋，11:00–21:00' },
+              { name: 'โรตีห้วยแก้ว Roti Huay Kaew', cid: '3413456571616986188', note: '★4.6 · 17:00–23:00 · 距酒店 570m 香蕉鸡蛋煎饼' }
+            ]
+          },
+          {
+            num: '3',
+            time: '20:00 – 20:25',
+            stay: '慢逛 25 分钟',
+            transport: '🚶 过马路步行 1 分钟（100 米）',
+            name: 'PLAYWORKS SHOP&CAFE（文创潮流店）→ 20:30 回酒店',
+            lat: 18.80132, lng: 98.96726,
+            cid: '1747096617607322333',
+            rating: '★4.3 (446)',
+            hours: '每天 09:00–22:00',
+            intro: '三坨土推荐（收藏 #16）：就在 MAYA 正对面 Think Park，清迈本土设计师文创店，卖手绘明信片、装饰画、贴纸、帆布包和泰国户外品牌 Calm Outdoor。',
+            howToPlay: '吃完晚饭散步逛 20 分钟消食，买两张清迈明信片或帆布包，20:25 步行 5 分钟回 Mai Hotel 洗漱早睡。',
+            food: '如需甜点，可走去酒店西北侧 570 米的「โรตีห้วยแก้ว」买现烙香蕉煎饼。'
+          }
+        ]
+      },
+      {
+        id: 'D2',
+        date: '12/8 周二',
+        shortTitle: '啪啦寺+艺术村+清大',
+        title: 'Day 2 · 12月8日（周二）半山森林古寺 + 艺术村米其林午餐 + 清迈大学日落',
+        subtitle: '10:00 出门 → 啪啦寺 → SANAE/冠军打抛饭 → Baan Kang Wat 艺术村 → 回酒店午休 → 清大食堂&安湖日落 → 宁曼咖喱面 → 19:30 回房',
+        routeUrl: 'https://www.google.com/maps/dir/?api=1&origin=Mai%20Hotel%20Chiang%20Mai&destination=Kao%20Soy%20Nimman%20Chiang%20Mai&waypoints=Wat%20Pha%20Lad%20Chiang%20Mai%7CSanae%20Thai%20Cuisine%20Chiang%20Mai%7CBaan%20Kang%20Wat%20Chiang%20Mai%7CChiang%20Mai%20University%20Main%20Food%20Court%7CAngkaew%20Reservoir%20Chiang%20Mai&travelmode=driving',
+        stops: [
+          {
+            num: '1',
+            time: '10:00 – 11:15',
+            stay: '游览 50–60 分钟',
+            transport: '🚕 10:00 从酒店打 GrabCar 直达寺庙正门（4.0 km · 约 12 分钟 · ฿90–130）',
+            name: '啪啦寺 Wat Pha Lad（帕拉寺 · 森林瀑布古寺）',
+            lat: 18.79940, lng: 98.93415,
+            cid: '6768799580990171272',
+            rating: '★4.8 (8,674)',
+            hours: '每天 06:00–17:30 · 门票免费',
+            intro: '三坨土评为「此行最喜欢的一个寺庙」（收藏 #13）。位于素贴山半山腰，建于兰纳库纳王时期。与其他金碧辉煌的寺庙截然不同，这里隐匿在森林溪谷中，主殿旁就是怀凯瀑布（Huay Kaew Waterfall），流水潺潺、古石阶长满青苔，还能透过树林俯瞰清迈城。',
+            howToPlay: '⚠️ 省力关键：不要走徒步山道（Monk\'s Trail），直接打 Grab 走盘山公路到寺庙门口下车！进门沿着平缓石径走到溪流石桥和古佛塔拍照。注意：穿遮肩过膝衣物；溪边岩石有青苔，牵好妈妈别踩湿滑石头。',
+            food: '寺庙门口有卖冰镇棕榈汁（Palm Juice）和椰子水的小摊，清甜解渴。'
+          },
+          {
+            num: '2',
+            time: '11:30 – 12:50',
+            stay: '用餐约 70 分钟',
+            transport: '🚕 从啪啦寺公路口打 Grab 下山到艺术村旁（约 12–15 分钟 · ฿100–140）',
+            name: '艺术村旁午餐：SANAE 米其林泰菜 或 冠军打抛饭',
+            lat: 18.77686, lng: 98.94603,
+            cid: '5939004905205745054',
+            rating: '★4.2–4.7',
+            hours: 'SANAE 周二至日 11:30–21:00（周一休）· 冠军打抛饭 10:00–19:00（周日休）',
+            intro: '这两家都在 Baan Kang Wat 艺术村步行 3–4 分钟范围内，且周二全部正常营业（避开了 SANAE 周一店休）！',
+            howToPlay: '11:30 刚开门就到 SANAE，基本不用排队；如果选冠军打抛饭，三坨土提醒现炒等餐要 30–40 分钟，不赶时间再去。',
+            food: '🍲 首选 A【SANAE • Sanae Thai Cuisine】（收藏 #9）：连续三年米其林入选，必点「酸辣牛小排汤」（肉嫩汤鲜）、「泰式烤牛肉串」，两人约 ฿800–1000。\n🍛 首选 B【冠军打抛饭 Kra Phrao Ta Nuat】（收藏 #4）：米饭和肉臊炒得干香有锅气，分量大，人均 ฿100。\n🍳 备选 C【Khao Ngai 早午餐】（★4.7，07:00–14:00）：环境好、上菜快。',
+            backups: [
+              { name: '冠军打抛饭 Kra Phrao Ta Nuat', cid: '5861649678548247088', note: '★4.5 · 10:00–19:00（周日休）· 距艺术村 350m' },
+              { name: 'Khao Ngai Breakfast and Brunch', cid: '16202114010980721133', note: '★4.7 · 07:00–14:00 · 距艺术村 300m' }
+            ]
+          },
+          {
+            num: '3',
+            time: '12:55 – 14:10',
+            stay: '慢逛 65–75 分钟',
+            transport: '🚶 从餐厅平路步行 3 分钟（250 米）',
+            name: 'Baan Kang Wat 艺术村（手作森林聚落）',
+            lat: 18.77619, lng: 98.94836,
+            cid: '6561582910531882655',
+            rating: '★4.5 (7,422)',
+            hours: '周二至周日 10:00–18:00（周一休息）· 免费',
+            intro: '由十几栋兰纳木屋围成的森林手作村落，绿树成荫、氛围安静文艺，非常适合带妈妈饭后散步淘小物件。',
+            howToPlay: '逛手工陶器店、蓝染棉麻衣服、水彩明信片店，累了随时在树荫下的露天木椅坐下休息。14:10 打 Grab（12 分钟）回 Mai Hotel 午休 1.5 小时，避开下午最晒时段！',
+            food: '村里有手冲咖啡和椰子冰淇淋；也可顺路买 400 米外的 Mini Juice Bar（★5.0）鲜榨果汁。',
+            backups: [
+              { name: '悟孟寺 Wat Umong（可选顺访）', cid: '17145092333932990553', note: '★4.6 · 距艺术村打车 3 分钟，700年森林隧道古寺' },
+              { name: 'Mini Juice Bar', cid: '7339777217232477888', note: '★5.0 · 09:00–19:00（周一休）· 纯鲜榨果蔬汁' }
+            ]
+          },
+          {
+            num: '4',
+            time: '15:45 – 17:50',
+            stay: '饮品+日落约 2 小时',
+            transport: '🚕 酒店午休后，15:45 打 Grab 到清大中央食堂（1.4 km · 约 6 分钟 · ฿60–80）',
+            name: '清迈大学中央食堂（nana奶昔）+ 安湖 Ang Kaew 看日落',
+            lat: 18.80658, lng: 98.95178,
+            cid: '6350111576862119428',
+            rating: '★4.7 (7,500)',
+            hours: '食堂工作日 07:00–19:00 · 安湖 05:00–22:00（免费）',
+            intro: '收藏 #22 & #23。清迈大学是泰北最高学府，校园北侧的「安湖（Ang Kaew）」正对着巍峨的素贴山，是清迈公认最美、最松弛的日落草坡（12月日落约 17:50）。',
+            howToPlay: '1. 15:45 先在「CMU Main Food Court」喝欢欢推荐的 nana 奶昔（空调充足，喝完把杯盘送回回收处）。\n2. 16:25 打 Grab（3 分钟）或慢走 10 分钟到「安湖 Ang Kaew」，在湖堤长椅坐着看夕阳把素贴山染成金色，不用走完 2 公里整圈，轻松散步拍照即可。',
+            food: '欢欢推荐：清大中央食堂 nana 鲜果奶昔（约 ฿40–60）。',
+            backups: [
+              { name: '清迈大学中央食堂 CMU Main Food Court', cid: '15898224868846185668', note: '★4.6 · 工作日 07:00–19:00 · nana奶昔' },
+              { name: 'VISIT CMU 校园观光车（可选）', cid: '10181777481429891984', note: '08:30–16:30 · ฿100/人，不坐可直接去安湖' }
+            ]
+          },
+          {
+            num: '5',
+            time: '18:00 – 19:20',
+            stay: '晚餐+饮品约 80 分钟',
+            transport: '🚕 从安湖打 Grab 到宁曼 7 巷（约 5 分钟 · ฿60–80），吃完步行 8 分钟回酒店',
+            name: '宁曼晚餐：Kao Soy Nimman + 手标泰茶 / Joost 果昔',
+            lat: 18.79790, lng: 98.96928,
+            cid: '12171504702832713441',
+            rating: '★4.2 (5,821)',
+            hours: 'Kao Soy Nimman 10:00–21:00 · Joost 宁曼店 08:00–23:00',
+            intro: '收藏 #3、#5、#11 全在宁曼路这几条相邻小巷里！吃完散步 8 分钟（700 米）就能安全回到 Mai Hotel，19:30 前进房间。',
+            howToPlay: '💡 省路提示：你清单里把 Joost Smoothies 标在了河东店，其实宁曼 13 巷就有 Joost 分店（离 Kao Soy Nimman 步行仅 3 分钟）！',
+            food: '🍜【Kao Soy Nimman】（收藏 #3）：三坨土去吃了两次！必点「牛肉咖喱面」、「鸡腿咖喱面」、「炒南瓜叶」，记得额外加一份面，两人约 ฿375。\n🥑【Joost Smoothies 宁曼13巷店】（收藏 #5）：三坨土推荐“泰国喜茶”，必点「牛油果奶昔」、「苹果葡萄冰沙」（各 ฿70，⚠️只收现金且找不开大钞，提前备零钱）。\n🧋【ChaTraMue 手标泰茶】（收藏 #11）：宁曼 9 巷，离咖喱面步行 1 分钟（营业至 20:00）。',
+            backups: [
+              { name: 'Joost Smoothies 宁曼13巷店', cid: '5550395890364707495', note: '★4.6 (429) · 08:00–23:00 · 备零钱现金' },
+              { name: 'ChaTraMue 手标泰茶 (宁曼9巷)', cid: '9361641166039825487', note: '★4.2 · 09:00–20:00' },
+              { name: 'Rock Me Burger & Bar Nimman', cid: '10789681214918725740', note: '★4.5 · 11:00–23:00 · 欢欢推荐汉堡' }
+            ]
+          }
+        ]
+      },
+      {
+        id: 'D3',
+        date: '12/9 周三',
+        shortTitle: '瓦洛洛+河畔+运河',
+        title: 'Day 3 · 12月9日（周三）早午餐/法式烘焙 + 瓦洛洛花市 + 河畔蛋糕 + 湄卡运河夜市',
+        subtitle: '10:00 出门 → Wooden Door/Baan Bakery → 瓦洛洛市场&花市 → Khagee/Malee 蛋糕 → 午休 → 湄卡运河 → Pakorn\'s 晚餐 → 烤吐司 → 19:50 回房',
+        routeUrl: 'https://www.google.com/maps/dir/?api=1&origin=Mai%20Hotel%20Chiang%20Mai&destination=TimNomSod%20Chiangmai&waypoints=Baan%20Bakery%20Chiang%20Mai%7CWarorot%20Market%20Chiang%20Mai%7CKhagee%20Chiang%20Mai%7CMae%20Kha%20Canal%20Chiang%20Mai%7CPakorn%27s%20Kitchen%20Chiang%20Mai&travelmode=driving',
+        stops: [
+          {
+            num: '1',
+            time: '10:00 – 11:10',
+            stay: '用餐约 55 分钟',
+            transport: '🚕 10:00 从酒店打 GrabCar 出发（约 15 分钟 · ฿100–140）',
+            name: '早午餐二选一：Wooden Door Cafe 或 Baan Bakery',
+            lat: 18.77957, lng: 98.98983,
+            cid: '4007743334856156926',
+            rating: '★4.8',
+            hours: 'Wooden Door 周三 08:00–16:00（周二休）· Baan Bakery 周三至六 09:00–15:00（周日一二休）',
+            intro: '这两家高分早午餐/烘焙店在周三都正常开门（完美避开它们周二休息）！想吃丰盛热食选 Wooden Door，想吃现烤可颂配咖啡选 Baan Bakery。',
+            howToPlay: '10:15 到店从容吃早午餐，开启元气满满的一天。',
+            food: '🍳 选择 A【Wooden Door Cafe】（收藏 #6 · ★4.8）：三坨土吃了两次！必点「青椒蘑菇鸡蛋卷」，配的面包一定要选「Buttered Toast（黄油吐司）」！不要点花哨饮料（咖啡可以），两人约 ฿500–600。\n🥐 选择 B【Baan Bakery】（收藏 #31 · ★4.8）：欢欢推荐，庭院里的现烤法式可颂、杏仁丹麦酥，人均 ฿100–180。',
+            backups: [
+              { name: 'Wooden Door Cafe', cid: '11813952844637830468', note: '★4.8 (610) · 08:00–16:00（周二休）' },
+              { name: 'Baan Bakery', cid: '4007743334856156926', note: '★4.8 (276) · 周三至六 09:00–15:00' }
+            ]
+          },
+          {
+            num: '2',
+            time: '11:20 – 12:40',
+            stay: '慢逛 80 分钟',
+            transport: '🚕 打 Grab 到瓦洛洛市场正门（约 8 分钟 · ฿70–90）',
+            name: '瓦洛洛市场 Warorot + 龙眼树花市 Ton Lam Yai',
+            lat: 18.78974, lng: 99.00070,
+            cid: '2648256326189542464',
+            rating: '★4.4 (7,478)',
+            hours: '每天 06:00–18:00 · 免费',
+            intro: '清迈最具烟火气的百年本地大集市（唐人街），紧挨着萍河边的龙眼树鲜花市场。比游客夜市干净便宜，非常有生活气息。',
+            howToPlay: '1. 在瓦洛洛一楼买伴手礼：芒果干、龙眼干、榴莲干、泰北炸猪皮、柠檬香茅茶（大多可试吃）。\n2. 走出东门过马路就是「龙眼树花市」，满街的兰花、玫瑰和手工穿制的茉莉花环（฿20–50 一串，买一串戴在手上香一整天，拍照极美）。',
+            food: '市场里可以尝尝现炸泰北香肠（Sai Oua）或鲜切小菠萝。',
+            backups: [
+              { name: '龙眼树花市 Ton Lam Yai Market', cid: '8774498114757061699', note: '★4.3 · 紧挨瓦洛洛东侧' }
+            ]
+          },
+          {
+            num: '3',
+            time: '12:45 – 13:55',
+            stay: '喝咖啡吃蛋糕 70 分钟',
+            transport: '🚕 打 Grab 过桥（3 分钟）或走过萍河步道桥步行 8 分钟（650 米）',
+            name: '萍河东岸下午茶：Khagee（胡萝卜蛋糕）或 Malee（椰子茉莉蛋糕）',
+            lat: 18.78617, lng: 99.00523,
+            cid: '7973248076729349958',
+            rating: '★4.5 (996)',
+            hours: 'Khagee 09:00–17:00 · Malee 09:00–17:00（周四至二至 18:00）',
+            intro: '收藏 #32（欢欢推荐）和收藏 #1（小红书推荐）都在萍河东岸，两家相距仅 390 米！逛完市场正好在空调咖啡馆坐下歇脚。',
+            howToPlay: '选一家坐下喝咖啡吃蛋糕，14:00 打 Grab 回 Mai Hotel 午休 2 小时（避开 14:00–16:00 最热时段），16:15 再精神饱满地出门去运河！',
+            food: '🥕 首选 A【Khagee】（收藏 #32 · ★4.5）：欢欢推荐「胡萝卜蛋糕（Carrot Cake）」配冰拿铁。\n🍰 首选 B【Malee Bakery & Ice Cream】（收藏 #1 · ★4.3）：小红书推荐「椰子蛋糕」、「茉莉戚风蛋糕」和自制冰淇淋。',
+            backups: [
+              { name: 'Malee Bakery & Ice Cream', cid: '4692934315271528653', note: '★4.3 (310) · 距 Khagee 仅 390 米' }
+            ]
+          },
+          {
+            num: '4',
+            time: '16:30 – 17:40',
+            stay: '漫步拍照 70 分钟',
+            transport: '🚕 酒店午休后，16:15 打 Grab 到湄卡运河（4.4 km · 约 15 分钟 · ฿100–130）',
+            name: '湄卡运河夜市 Mae Kha Canal（日式灯笼水岸步道）',
+            lat: 18.77707, lng: 98.99557,
+            cid: '2992999415371819311',
+            rating: '★4.2 (6,333)',
+            hours: '每天 16:00–22:00 · 免费',
+            intro: '被称为“清迈小樽”的 750 米水岸步行街。两岸是木屋改造的手作小铺、小吃摊和鲜花桥，挂满暖黄色灯笼，氛围安静浪漫，不拥挤。',
+            howToPlay: '16:30–17:40 是全天最美时段：前半段天色微亮适合拍人物照，17:15 后两岸灯笼全部亮起倒映在水面。全程平路木栈道，带妈妈慢慢走一趟约 45–60 分钟。',
+            food: '运河边有现烤小丸子、泰式煎饼和鲜榨果汁小摊，留着肚子去隔壁 110 米的 Pakorn\'s Kitchen 吃正餐！'
+          },
+          {
+            num: '5',
+            time: '17:45 – 19:45',
+            stay: '晚餐+甜品 2 小时',
+            transport: '🚶 从运河步道口步行仅 1 分钟（110 米）即达餐厅！',
+            name: 'Pakorn\'s Kitchen（三坨土激推晚餐）+ TimNomSod 炭火烤吐司',
+            lat: 18.77800, lng: 98.99585,
+            cid: '13509292958454984357',
+            rating: '★4.6 (1,485)',
+            hours: 'Pakorn\'s 周日至五 13:30–22:00（周六休）· TimNomSod 16:30–23:30',
+            intro: '收藏 #10【Pakorn\'s Kitchen】就在湄卡运河紧旁边（走路 1 分钟）！三坨土评价为「还想再吃一次的餐厅，激推」。吃完可顺路打车 5 分钟去塔佩路吃收藏 #7【TimNomSod】炭火烤吐司，19:45 打 Grab 回酒店。',
+            howToPlay: '17:45 逛完运河直接走进 Pakorn\'s Kitchen 吃晚饭，不用排晚高峰长队！',
+            food: '🍛【Pakorn\'s Kitchen】（收藏 #10）：必点「招牌 Massaman 玛莎曼咖喱」（微甜浓郁超下饭）、「冬阴功汤」（酸甜辣平衡）、「炒空心菜」+ 新鲜椰青，三个菜全部光盘才 ฿510！\n🍞【TimNomSod Chiangmai】（收藏 #7）：双面刷蜂蜜炭火烤吐司，外脆内松，必点「斑斓酱烤吐司 + 鲜奶泰茶」（共 ฿95）。',
+            backups: [
+              { name: 'TimNomSod Chiangmai (烤吐司鲜奶)', cid: '314714958771142022', note: '★4.5 (413) · 16:30–23:30 · 斑斓酱炭烤吐司' },
+              { name: 'Meating Community (运河边牛排烤肉)', cid: '180333309596255695', note: '★4.9 (556) · 17:00–21:00（周日休）' },
+              { name: 'Bami Jae Hua 中式鸡蛋面', cid: '2392748369803976990', note: '★4.7 (1,395) · 07:30–20:00 · 距运河 400m' }
+            ]
+          }
+        ]
+      },
+      {
+        id: 'D4',
+        date: '12/10 周四',
+        shortTitle: 'Klook大象+粘粘瀑布',
+        title: 'Day 4 · 12月10日（周四 · 宪法日）Klook 一日团：新大象之家 + 竹筏漂流 + 粘粘瀑布',
+        subtitle: '08:30 酒店专车接 → 10:00 新大象之家 → 12:30 泰式自助餐 → 13:40 竹筏漂流 → 15:00 布阿东粘粘瀑布 → 17:30 送回酒店 → 潮汕粥',
+        routeUrl: 'https://www.google.com/maps/dir/?api=1&origin=Mai%20Hotel%20Chiang%20Mai&destination=Buatong%20Waterfall%20Chiang%20Mai&waypoints=New%20Elephant%20Home%20Mae%20Taeng&travelmode=driving',
+        stops: [
+          {
+            num: '1',
+            time: '08:30 – 13:30',
+            stay: '上午保护营体验+午餐',
+            transport: '🚐 一日团专车到 Mai Hotel 大堂接送（无需自己打车，山路约 1 小时 15 分钟）',
+            name: '新大象之家 New Elephant Home（大象护理 + 泰式自助午餐）',
+            lat: 19.19413, lng: 98.89536,
+            cid: '2496747434237916958',
+            rating: '★4.8 (1,315)',
+            hours: '一日团 08:30 接 – 17:30 送回（成人约 ¥353 起，24h前可免费退改）',
+            intro: '收藏 #14。你截图里的套餐「大象护理 + 竹筏漂流 + 瀑布」完美把你清单里的 #14 大象之家 和 #15 布阿东粘粘瀑布 串联在同一天，全程专车接送，省心安全！',
+            howToPlay: '1. 08:00 吃早餐（容易晕车提前半小时吃晕车药）。\n2. 10:00 抵达营地：换营地服装，亲手切水果、做草本维生素球，喂食小象与象妈妈，与大象在山谷散步，在岸边观察大象洗澡（无需下水）。\n3. 12:30 在营地享用泰式自助午餐与热带水果。',
+            food: '含营地泰式自助午餐 + 新鲜水果 + 饮用水。'
+          },
+          {
+            num: '2',
+            time: '13:40 – 16:15',
+            stay: '竹筏 50 分钟 + 瀑布 70 分钟',
+            transport: '🚐 一日团专车接驳 → 17:30 直接送回 Mai Hotel 门口',
+            name: '8Adventures 竹筏漂流 (3km) + 布阿东粘粘瀑布 Buatong Waterfall',
+            lat: 19.06944, lng: 99.07907,
+            cid: '5480320487083308147',
+            rating: '★4.7 (7,736)',
+            hours: '13:40 竹筏漂流 · 15:00 粘粘瀑布 · 17:30 回到酒店',
+            intro: '收藏 #15「粘粘瀑布（Buatong Waterfall）」。泉水富含碳酸钙矿物质，乳白色石灰岩表面像粗砂纸一样不长青苔，赤脚踩上去“自带防滑”，可以逆流往上走！',
+            howToPlay: '1. 13:40 竹筏漂流：船夫撑篙顺流而下 3 公里（40–60 分钟），穿凉鞋/拖鞋，手机装防水袋。\n2. 15:00 粘粘瀑布：如果妈妈不想下水爬瀑布，旁边有修得很好的木栈道和凉亭，坐在树荫下泡脚、拍照非常凉爽！\n🎒 必带包袱：防晒帽、毛巾、一套备用换洗衣物、运动鞋+凉鞋/拖鞋、防水手机袋。',
+            food: '景区门口有咖啡店和椰子冰淇淋。',
+            backups: [
+              { name: '【如果不报团的轻松替代】素贴山双龙寺', cid: '11350843871786794529', note: '★4.7 · 10:00 打 Grab 上山坐电梯看金塔全景' }
+            ]
+          },
+          {
+            num: '3',
+            time: '18:15 – 19:30',
+            stay: '晚餐约 60 分钟',
+            transport: '🚕 回酒店洗澡换衣服后，打 Grab 5 分钟（1.5 km · ฿60–80）',
+            name: 'ข้าวต้มย้ง 永记潮汕粥（清淡养胃晚餐）→ 19:30 回酒店',
+            lat: 18.78972, lng: 98.96388,
+            cid: '5833189796732892803',
+            rating: '★4.4 (2,051)',
+            hours: '每天 16:00–24:00',
+            intro: '收藏 #26（欢欢推荐）。在外面玩了一整天，晚上吃一顿热腾腾的泰式潮州白粥配家常小炒，肠胃最舒服！',
+            howToPlay: '点两碗热白粥/番薯粥，配几碟清爽小炒，吃完 19:30 回酒店早早休息（或顺路去 Phuphaya 做个足底按摩）。',
+            food: '🥣 必点：热白粥 + 豆酱炒空心菜、菜脯煎蛋、脆皮烧肉、潮州卤鸭/卤豆腐，两人约 ฿250–350。'
+          }
+        ]
+      },
+      {
+        id: 'D5',
+        date: '12/11 周五',
+        shortTitle: '古城寺庙+按摩',
+        title: 'Day 5 · 12月11日（周五）古城经典双寺 + 高分泰餐/牛肉面 + A-Va 按摩 + 泰北小火锅',
+        subtitle: '10:00 出门 → 契迪龙寺&盼道寺 → Aoyjai/phithi/Kat\'s 午餐 → 13:00 A-Va 按摩 → 帕辛寺 → 回酒店休息 → Khoei Yuan 小火锅 → 19:30 回房',
+        routeUrl: 'https://www.google.com/maps/dir/?api=1&origin=Wat%20Chedi%20Luang%20Chiang%20Mai&destination=Khoei%20Yuan%20At%20Chiang%20Mai&waypoints=Wat%20Phantao%20Chiang%20Mai%7CAoyjai%20Kitchen%20Chiang%20Mai%7CA-Va%20Massage%20Chiang%20Mai%7CWat%20Phra%20Singh%20Woramahawihan%20Chiang%20Mai&travelmode=walking',
+        stops: [
+          {
+            num: '1',
+            time: '10:00 – 11:30',
+            stay: '双寺慢逛 75 分钟',
+            transport: '🚕 10:00 从酒店打 GrabCar 直达契迪龙寺正门（3.2 km · 约 12–15 分钟 · ฿90–120）',
+            name: '契迪龙寺 Wat Chedi Luang + 盼道寺 Wat Phantao（柚木寺）',
+            lat: 18.78697, lng: 98.98658,
+            cid: '6698946777536243898',
+            rating: '★4.7 (19,381)',
+            hours: '契迪龙寺 05:00–22:30（门票 ฿50/人现金）· 盼道寺 07:00–19:00（免费）',
+            intro: '收藏 #18。三坨土备注：「清迈最大寺庙，院内还有地标大佛塔，很震撼，拍照也好看」。始建于 1411 年，院中央 600 年历史的巨型残塔曾是整个兰纳王国最高的建筑；走出正门右转 1 分钟（100 米）就是整座由 280 年古柚木建成的「盼道寺」。',
+            howToPlay: '1. 先逛契迪龙寺金碧辉煌的主殿，再绕着大佛塔走一圈看四面的古象雕（注意：进门左手边的城柱殿女性不可入内）。\n2. 出正门右转进盼道寺看柚木大殿与后院竹林水池。\n👗 着装：上衣有袖、裤/裙过膝，穿容易穿脱的鞋。',
+            food: '寺庙院内有树荫咖啡亭可买冰水。',
+            backups: [
+              { name: '盼道寺 Wat Phantao (柚木寺)', cid: '9683680526962507002', note: '★4.6 · 契迪龙寺正门右转 100 米' },
+              { name: 'ครัวอมร สวนดอก Krua Amorn (如想先吃早午餐)', cid: '1057256593736573431', note: '★4.8 · 07:00–19:00 · 欢欢推荐泰北菜' }
+            ]
+          },
+          {
+            num: '2',
+            time: '11:35 – 12:50',
+            stay: '午餐约 75 分钟',
+            transport: '🚶 从契迪龙寺平路步行 5–7 分钟（400–550 米）',
+            name: '古城午餐三选一：Aoyjai Kitchen / phithi 牛肉面 / Kat\'s Kitchen',
+            lat: 18.78336, lng: 98.98737,
+            cid: '12657733769833168625',
+            rating: '★4.8 (986)',
+            hours: 'Aoyjai 11:30–17:00（周三休）· phithi 09:15–15:00 · Kat\'s 09:00–21:20',
+            intro: '把古城排在周五的妙处：你清单里的 #2【Aoyjai Kitchen】（周三店休）、#24【phithi 牛肉面】、#12【Kat\'s Kitchen】在周五中午全部开门，且都在契迪龙寺去 A-Va 按摩的顺路上！',
+            howToPlay: '根据当天胃口三选一，中午都不怎么排队。',
+            food: '🥗 选择 A【Aoyjai Kitchen】（收藏 #2 · ★4.8）：距契迪龙寺步行 5 分钟，高分家庭式泰餐，少油干净，泰北咖喱、炒时蔬、芒果糯米饭超赞。\n🍜 选择 B【phithi 牛肉面】（收藏 #24 · ★4.7）：欢欢推荐，慢炖清汤/浓汤牛肉面，牛肉软烂，有空调。\n🍛 选择 C【Kat\'s Kitchen】（收藏 #12 · ★4.4）：三坨土推荐高性价比泰餐，必点 Panang 咖喱海鲜、冬阴功汤、空心菜、鲜虾 Mama 面（两人吃撑才 ฿415）。',
+            backups: [
+              { name: 'phithi 牛肉面 (欢欢推荐)', cid: '1050296091129084773', note: '★4.7 (513) · 09:15–15:00' },
+              { name: "Kat's Kitchen (三坨土推荐)", cid: '1596456148368043451', note: '★4.4 (4,075) · 09:00–21:20 · 中午免排队' }
+            ]
+          },
+          {
+            num: '3',
+            time: '13:00 – 14:30',
+            stay: '按摩放松 90 分钟',
+            transport: '🚶 从午餐店步行 5–6 分钟（400 米）',
+            name: 'A-Va Massage（欢欢推荐 ★4.9 高分按摩 · 需提前预约）',
+            lat: 18.78474, lng: 98.98080,
+            cid: '13679271191284937855',
+            rating: '★4.9 (447)',
+            hours: '每天 09:30–18:30（电话：087 659 4556）',
+            intro: '收藏 #20（欢欢强烈推荐，Google 评分高达 4.9）。前一天刚玩完大象和瀑布一日游，周五中午 13:00 正好在空调房里做 90 分钟泰式或足底按摩，既解乏又避开正午烈日！',
+            howToPlay: '⚠️ 必做：提前 1–2 天拨打电话 087 659 4556 或通过 Facebook 预约周五 13:00 两人位。按摩时如果力道太重，对技师说 "Bao Bao ka"（轻一点）。',
+            food: '按摩前后店里会提供热茶与小点心。'
+          },
+          {
+            num: '4',
+            time: '14:35 – 15:20',
+            stay: '游览 45 分钟',
+            transport: '🚶 从 A-Va 按摩出来向北步行仅 5 分钟（430 米）',
+            name: '帕辛寺 Wat Phra Singh（清迈最高级别皇家寺院）',
+            lat: 18.78853, lng: 98.98199,
+            cid: '10833085540246312169',
+            rating: '★4.7 (17,724)',
+            hours: '每天 05:30–19:30（主殿门票 ฿20–50）',
+            intro: '与契迪龙寺齐名的古城双璧之一，始建于 1345 年。院内有纯金色的兰纳佛塔，以及著名的「莱卡姆殿（Viharn Lai Kham）」，殿内保存着描绘百年前清迈人生活场景的古典壁画。',
+            howToPlay: '按摩完神清气爽，走 5 分钟进来逛一圈莱卡姆殿和金塔，15:20 打 Grab（12 分钟）回 Mai Hotel 休息。'
+          },
+          {
+            num: '5',
+            time: '17:30 – 19:00',
+            stay: '晚餐 90 分钟',
+            transport: '🚕 17:15 从酒店打 Grab 去餐厅（约 12–15 分钟 · ฿90–120），19:15 打车回房',
+            name: 'Khoei Yuan เขยญวน（三坨土推荐 · 泰北越式小火锅）',
+            lat: 18.77531, lng: 98.98556,
+            cid: '9715282496128183049',
+            rating: '★4.5 (252)',
+            hours: '周一二四五六 11:00–13:30 及 17:00–21:30（周三仅午市，周日休）',
+            intro: '收藏 #8。三坨土评价：「如果想吃泰北小火锅不如来这家！别去清迈大学后门夜市了。」越式+泰北融合风味，周五晚市正常营业（避开了周三晚市不开的坑）。',
+            howToPlay: '17:30 到店吃晚饭，19:00 吃完打 Grab 回 Mai Hotel，19:20 安全到房间。',
+            food: '🍲 必点攻略（按三坨土实测）：\n1. 小火锅锅底是无椰奶清汤版冬阴功，微辣清香。\n2. 猪肉片和生鸡蛋拌匀后下锅超级嫩！（⚠️不吃内脏的话不要点猪肝猪肠，直接点两份猪肉 + 蔬菜粉丝）。\n3. 必加一份「炸鸡翅」（香酥肉嫩）！'
+          }
+        ]
+      },
+      {
+        id: 'D6',
+        date: '12/12 周六',
+        shortTitle: 'JJ市集+咖喱面+返程',
+        title: 'Day 6 · 12月12日（周六）JJ 周末早市（手绘）+ 邓丽君咖喱面 + 按摩 + 平安去机场',
+        subtitle: '09:30 出门 → 09:45 JJ 市集（手绘+伴手礼）→ 11:45 Khao Soi Mae Sai → 回酒店退房寄存 → 13:15 Phuphaya 按摩 → 15:45 去机场（18:50起飞）',
+        routeUrl: 'https://www.google.com/maps/dir/?api=1&origin=Mai%20Hotel%20Chiang%20Mai&destination=Chiang%20Mai%20International%20Airport&waypoints=Jing%20Jai%20Market%20Chiang%20Mai%7CKhao%20Soi%20Maesai%20Chiang%20Mai%7CPhuphaya%20Massage%20and%20Spa%20Chiang%20Mai%7CMai%20Hotel%20Chiang%20Mai&travelmode=driving',
+        stops: [
+          {
+            num: '1',
+            time: '09:30 – 11:40',
+            stay: '慢逛 2 小时',
+            transport: '🚕 09:30 从酒店打 GrabCar 到 Jing Jai Market（3.3 km · 约 12–15 分钟 · ฿90–120）',
+            name: '真心市集 Jing Jai Market（JJ 周末市集 · 手绘定制 & 手作）',
+            lat: 18.80625, lng: 98.99530,
+            cid: '11511114691515616006',
+            rating: '★4.5 (12,445)',
+            hours: '周六、周日早市 06:30–14:00（Good Goods 等常设店至 21:00）· 免费',
+            intro: '清迈最干净、颜值最高的周末有机农夫与手作市集！⚠️ 重要纠错：你清单里第 28 个「JJ MART ตู้คีบตุ๊กตา」是城南 10 公里外的抓娃娃机店，千万别点错！请直接点本卡片的导航按钮去真正的 Jing Jai Market。',
+            howToPlay: '1. 09:45 到达（摊位最全，12:00 后才陆续收摊）。\n2. 一进市集先找欢欢推荐的「手绘摊」（手绘包包/明信片/肖像），先下单让画师画，你们逛完一圈回来刚好取件！\n3. 逛有空调的「Good Goods」泰北设计买手店（编织包、大象挂件、咖啡豆非常适合做伴手礼）。\n4. 备好小面额泰铢现金和环保袋。',
+            food: '市集里有有机椰子水、泰北传统米糕、手冲咖啡和现烤面包摊。'
+          },
+          {
+            num: '2',
+            time: '11:45 – 12:40',
+            stay: '午餐约 55 分钟',
+            transport: '🚕 从 JJ 市集打 Grab 往回走（2.2 km · 约 8 分钟 · ฿70–90，正好在回酒店顺路上！）',
+            name: 'Khao Soi Mae Sai（欢欢推荐 · 邓丽君咖喱面）',
+            lat: 18.79960, lng: 98.97520,
+            cid: '5039605543517047272',
+            rating: '★4.5 (6,186)',
+            hours: '周一至周六 08:00–16:00（周日休息）· 只收现金',
+            intro: '收藏 #29。连续多年入选米其林必比登推介的老牌咖喱面馆，距离 Mai Hotel 仅 1.2 公里（打车 4 分钟）。正好和周二吃的 Kao Soy Nimman 对比一下哪家更合你们口味！',
+            howToPlay: '11:45 到店，拿号点单上菜极快。12:40 吃完打车 4 分钟回 Mai Hotel 办理退房（或提前在早上 09:30 出门前退房寄存行李），把行李寄存在酒店前台。',
+            food: '🍜 必点：Khao Soi Kai（咖喱鸡腿面）、Khao Soi Nuea（咖喱炖牛肉面）、泰式冰奶茶（单碗仅 ฿55–65，只收泰铢现金）。',
+            backups: [
+              { name: 'Botan 日料 (酒店隔壁步行 1 分钟)', cid: '6988655358960616714', note: '★4.5 · 11:00–14:00 · 如不想再吃咖喱面可选' },
+              { name: 'ครัวอมร สวนดอก Krua Amorn (欢欢推荐泰北菜)', cid: '1057256593736573431', note: '★4.8 · 07:00–19:00' }
+            ]
+          },
+          {
+            num: '3',
+            time: '13:15 – 15:15',
+            stay: '按摩 90–120 分钟',
+            transport: '🚕 从酒店打 Grab 4 分钟（1.1 km）→ 15:15 回酒店拿行李 → 15:45 打车去机场',
+            name: 'Phuphaya Massage and Spa（登机前放松）→ 15:45 去机场 CNX',
+            lat: 18.79524, lng: 98.97089,
+            cid: '18269090631161055718',
+            rating: '★4.5 (605)',
+            hours: '每天 10:00–22:00（电话：093 167 7295）',
+            intro: '收藏 #19。抖音/欢欢笔记：「早上逛完周末集市直接 walk-in 到店，按摩区域私密性强。泰式按摩 330 铢/1h，阿姨力道精准，暴走积攒的酸痛感瞬间化解！」',
+            howToPlay: '1. ⚠️ 重要：因为已经退房没法洗澡，请选择「泰式按摩（Thai Massage）」或「足底肩颈按摩（Foot & Shoulder）」，不要选涂精油的 Oil Massage！\n2. 15:15 回 Mai Hotel 取寄存行李。\n3. 🎒 登机前必查：今晚 22:25 飞抵广州白云机场过夜中转，托运行李直挂上海/武汉不取出！务必把今晚洗漱用品、换洗内衣和明天回上海/武汉穿的厚外套放进随身手提包！\n4. 15:45 打 Grab 去清迈机场（15 分钟车程，16:00 到机场，18:50 起飞）。',
+            food: '机场候机厅内有简餐、咖啡与伴手礼店。'
+          }
+        ]
+      }
+    ];
+
+    const SAVED_33 = [
+      { idx: 1, name: 'Malee Bakery & Ice Cream', cat: '咖啡/甜品', rating: '★4.3 (310)', hours: '09:00–18:00 (周三至17:00)', day: 'D3', dayLabel: 'D3 周三下午茶', cid: '4692934315271528653', note: '小红书：椰子蛋茉莉戚风蛋糕。位于萍河东岸，距 Khagee 仅 390 米。' },
+      { idx: 2, name: 'Aoyjai Kitchen', cat: '正餐/小吃', rating: '★4.8 (986)', hours: '11:30–17:00 · ⚠️周三休', day: 'D5', dayLabel: 'D5 周五古城午餐', cid: '12657733769833168625', note: '古城南门内高分家庭泰餐，距契迪龙寺步行 5 分钟。专门排在周五避开周三店休！' },
+      { idx: 3, name: 'Kao Soy Nimman', cat: '正餐/小吃', rating: '★4.2 (5,821)', hours: '每天 10:00–21:00', day: 'D2', dayLabel: 'D2 周二宁曼晚餐', cid: '12171504702832713441', note: '三坨土：去吃了两次！必点牛肉咖喱面、鸡肉咖喱面、南瓜叶，一定要额外加面（共375铢）。' },
+      { idx: 4, name: '冠军打抛饭 (Kra Phrao Ta Nuat)', cat: '正餐/小吃', rating: '★4.5 (206)', hours: '10:00–19:00 · ⚠️周日休', day: 'D2', dayLabel: 'D2 周二艺术村午餐', cid: '5861649678548247088', note: '三坨土：米饭和肉臊炒得很干很有锅气，分量大，但饭点等餐可能要 30–40 分钟。距艺术村步行 4 分钟。' },
+      { idx: 5, name: 'Joost Smoothies (含宁曼13巷分店)', cat: '咖啡/甜品', rating: '★4.6 (429)', hours: '宁曼店 08:00–23:00', day: 'D2', dayLabel: 'D2 周二宁曼果昔', cid: '5550395890364707495', note: '三坨土：泰国喜茶，牛油果奶昔、苹果葡萄冰沙各70铢（⚠️只收现金且找不开大钞）。已为你匹配更近的宁曼13巷分店！' },
+      { idx: 6, name: 'Wooden Door Cafe', cat: '咖啡/甜品', rating: '★4.8 (610)', hours: '08:00–16:00 · ⚠️周二休', day: 'D3', dayLabel: 'D3 周三早午餐', cid: '11813952844637830468', note: '三坨土：必点青椒蘑菇鸡蛋卷 + Buttered Toast 黄油吐司！不要点饮料（咖啡可以）。排在周三避开周二店休。' },
+      { idx: 7, name: 'TimNomSod Chiangmai', cat: '咖啡/甜品', rating: '★4.5 (413)', hours: '每天 16:30–23:30', day: 'D3', dayLabel: 'D3 周三晚饭后甜品', cid: '314714958771142022', note: '三坨土：双面刷蜂蜜炭火烤吐司，外脆里松，必点斑斓酱/泰茶酱烤吐司 + 鲜奶泰奶茶（共95铢）。' },
+      { idx: 8, name: 'Khoei Yuan เขยญวน (泰北小火锅)', cat: '正餐/小吃', rating: '★4.5 (252)', hours: '11:00–13:30, 17:00–21:30 · ⚠️周三无晚市/周日休', day: 'D5', dayLabel: 'D5 周五晚餐', cid: '9715282496128183049', note: '三坨土：清汤冬阴功小火锅，生鸡蛋拌猪肉片下锅超嫩（建议点两份猪肉+蔬菜粉丝+炸鸡翅）。排在周五晚！' },
+      { idx: 9, name: 'SANAE • Sanae Thai Cuisine', cat: '正餐/小吃', rating: '★4.2 (444)', hours: '11:30–21:00 · ⚠️周一休', day: 'D2', dayLabel: 'D2 周二艺术村午餐', cid: '5939004905205745054', note: '三坨土：连续三年米其林，必点酸辣牛小排汤、泰式烤牛肉串。就在艺术村旁步行 3 分钟，周二 11:30 一开门去免排队！' },
+      { idx: 10, name: "Pakorn's Kitchen", cat: '正餐/小吃', rating: '★4.6 (1,485)', hours: '13:30–22:00 · ⚠️周六休', day: 'D3', dayLabel: 'D3 周三运河晚餐', cid: '13509292958454984357', note: '三坨土激推：距湄卡运河步行仅 1 分钟（110米）！必点招牌 Massaman 咖喱、冬阴功汤、空心菜、椰青（510铢）。' },
+      { idx: 11, name: 'ChaTraMue 手标泰茶', cat: '咖啡/甜品', rating: '★4.2 (266)', hours: '每天 09:00–20:00', day: 'D2', dayLabel: 'D1 MAYA / D2 宁曼9巷', cid: '9361641166039825487', note: '手标泰式奶茶，在 MAYA 商场和宁曼 9 巷（Kao Soy Nimman 旁 100米）都有。' },
+      { idx: 12, name: "Kat's Kitchen", cat: '正餐/小吃', rating: '★4.4 (4,075)', hours: '每天 09:00–21:20', day: 'D5', dayLabel: 'D5 周五古城午餐', cid: '1596456148368043451', note: '三坨土：超高性价比当地泰餐（Panang咖喱海鲜、冬阴功、空心菜、鲜虾Mama面，两人415铢）。中午去不用排队！' },
+      { idx: 13, name: '啪啦寺 Wat Pha Lad (帕拉寺)', cat: '景点/寺庙', rating: '★4.8 (8,674)', hours: '每天 06:00–17:30 · 免费', day: 'D2', dayLabel: 'D2 周二 10:15 首站', cid: '6768799580990171272', note: '三坨土最爱寺庙：素贴山半山森林溪流古寺，主殿旁有怀凯瀑布。从酒店打 Grab 12 分钟直达门口，不用爬山！' },
+      { idx: 14, name: '大象之家 New Elephant Home', cat: '景点/寺庙', rating: '★4.8 (1,315)', hours: 'Klook 一日团 08:30–17:30', day: 'D4', dayLabel: 'D4 周四 Klook一日团', cid: '2496747434237916958', note: '道德大象保护区：做维生素球、喂大象、散步、看大象洗澡+自助午餐+竹筏漂流。' },
+      { idx: 15, name: 'Buatong Waterfall (粘粘瀑布)', cat: '景点/寺庙', rating: '★4.7 (7,736)', hours: '一日团 15:00 已包含', day: 'D4', dayLabel: 'D4 周四 Klook一日团含', cid: '5480320487083308147', note: '石灰岩矿物质瀑布，踩上去防滑。你截图的「大象护理+竹筏+瀑布」一日团下午 15:00 已包含此景点，无需单跑！' },
+      { idx: 16, name: 'PLAYWORKS SHOP&CAFE', cat: '按摩/购物', rating: '★4.3 (446)', hours: '每天 09:00–22:00', day: 'D1', dayLabel: 'D1 周一晚 MAYA对面', cid: '1747096617607322333', note: '三坨土：MAYA 正对面文创+潮流小店，卖明信片、画、贴纸、帆布包、Calm Outdoor。距酒店步行 5 分钟。' },
+      { idx: 17, name: 'Element 72 (买 KEEN 鞋 · MAYA 2楼店)', cat: '按摩/购物', rating: '★3.2 (MAYA专柜)', hours: '11:00–21:00 (周末10:00起)', day: 'D1', dayLabel: 'D1 周一晚 MAYA 2楼', cid: '6528584468940134037', note: '备注 keen：不用去东郊尚泰百货，离酒店步行 5 分钟的 MAYA 商场 2 楼就有 Element 72 专柜！' },
+      { idx: 18, name: '契迪龙寺 Wat Chedi Luang', cat: '景点/寺庙', rating: '★4.7 (19,381)', hours: '05:00–22:30 · 门票50铢', day: 'D5', dayLabel: 'D5 周五 10:15 古城', cid: '6698946777536243898', note: '三坨土：清迈最大寺庙，600年地标大佛塔非常震撼，旁边紧挨着盼道寺柚木大殿。' },
+      { idx: 19, name: 'Phuphaya Massage and Spa', cat: '按摩/购物', rating: '★4.5 (605)', hours: '每天 10:00–22:00', day: 'D6', dayLabel: 'D6 周六 13:15 按摩', cid: '18269090631161055718', note: '抖音/欢欢：泰式按摩 330铢/1h，私密性强、阿姨力道精准。排在周六退房后、去机场前放松！' },
+      { idx: 20, name: 'A-Va Massage', cat: '按摩/购物', rating: '★4.9 (447)', hours: '每天 09:30–18:30 · 需预约', day: 'D5', dayLabel: 'D5 周五 13:00 古城按摩', cid: '13679271191284937855', note: '欢欢推荐高分按摩：排在周五古城午餐后 13:00，提前电话 087 659 4556 预约两人位。' },
+      { idx: 21, name: 'Rock Me Burger & Bar Nimman', cat: '正餐/小吃', rating: '★4.5 (1,537)', hours: '每天 11:00–23:00', day: 'D2', dayLabel: 'D2/D4 宁曼晚餐备选', cid: '10789681214918725740', note: '欢欢推荐：宁曼 15 巷大分量手作汉堡，可在 Hungry Hub 订位。' },
+      { idx: 22, name: 'Chiang Mai University Main Food Court', cat: '咖啡/甜品', rating: '★4.6 (444)', hours: '工作日 07:00–19:00 (周末08–15)', day: 'D2', dayLabel: 'D2 周二 15:45 清大', cid: '15898224868846185668', note: '欢欢推荐 nana 奶昔：有空调、干净便宜，喝完去安湖看日落。' },
+      { idx: 23, name: '清迈大学 (安湖 Ang Kaew)', cat: '景点/寺庙', rating: '★4.7 (7,500)', hours: '安湖 05:00–22:00 · 免费', day: 'D2', dayLabel: 'D2 周二 16:25 看日落', cid: '6350111576862119428', note: '16:30–17:50 在安湖长椅吹风看素贴山日落，清迈最惬意的傍晚散步地。' },
+      { idx: 24, name: 'phithi 牛肉面', cat: '正餐/小吃', rating: '★4.7 (513)', hours: '09:15–15:00 (周六11:00起)', day: 'D5', dayLabel: 'D5 周五古城午餐', cid: '1050296091129084773', note: '欢欢推荐牛肉面：距契迪龙寺步行 7 分钟，汤醇肉烂，有空调。' },
+      { idx: 25, name: 'โรตีห้วยแก้ว Roti Huay Kaew', cat: '咖啡/甜品', rating: '★4.6 (160)', hours: '每天 17:00–23:00', day: 'D1', dayLabel: 'D1/D2 酒店旁晚间甜点', cid: '3413456571616986188', note: '距 Mai Hotel 步行仅 7 分钟（570米），现烙香蕉鸡蛋炼奶煎饼。' },
+      { idx: 26, name: 'ข้าวต้มย้ง 永记潮汕粥', cat: '正餐/小吃', rating: '★4.4 (2,051)', hours: '每天 16:00–24:00', day: 'D4', dayLabel: 'D4 周四一日团后晚餐', cid: '5833189796732892803', note: '欢欢推荐泰国潮汕菜：热白粥配空心菜、菜脯蛋、脆皮猪，大象一日游回来吃最养胃。' },
+      { idx: 27, name: 'ครัวอมร สวนดอก Krua Amorn', cat: '正餐/小吃', rating: '★4.8 (640)', hours: '每天 07:00–19:00', day: 'D5', dayLabel: 'D5/D6 泰北菜备选', cid: '1057256593736573431', note: '欢欢推荐：松达寺旁地道泰北家常菜（汉莱咖喱、泰北香肠）。' },
+      { idx: 28, name: 'Jing Jai Market (修正原错误定位 JJ MART)', cat: '按摩/购物', rating: '★4.5 (12,445)', hours: '周六日早市 06:30–14:00', day: 'D6', dayLabel: 'D6 周六 09:45 早市', cid: '11511114691515616006', note: '欢欢推荐手绘，周六日才开。⚠️已将你清单里错误的抓娃娃店修正为真正的 Jing Jai Market！' },
+      { idx: 29, name: 'Khao Soi Maesai (湄赛咖喱面)', cat: '正餐/小吃', rating: '★4.5 (6,186)', hours: '08:00–16:00 · ⚠️周日休', day: 'D6', dayLabel: 'D6 周六 11:45 午餐', cid: '5039605543517047272', note: '邓丽君咖喱面，米其林必比登推介。周六逛完 JJ 市集回酒店正好顺路吃（只收现金）。' },
+      { idx: 30, name: '玛雅购物中心 MAYA (B1船面)', cat: '正餐/小吃', rating: '★4.4 (17,889)', hours: '每天 10:00–22:00', day: 'D1', dayLabel: 'D1 周一 19:10 晚餐', cid: '2634136185446806142', note: '欢欢推荐负一楼船面；距离 Mai Hotel 步行仅 5 分钟（300米）。' },
+      { idx: 31, name: 'Baan Bakery', cat: '咖啡/甜品', rating: '★4.8 (276)', hours: '09:00–15:00 · ⚠️周日一二休', day: 'D3', dayLabel: 'D3 周三 10:00 早茶', cid: '4007743334856156926', note: '欢欢推荐法式可颂面包店，排在周三上午，现烤出炉最香。' },
+      { idx: 32, name: 'Khagee (胡萝卜蛋糕)', cat: '咖啡/甜品', rating: '★4.5 (996)', hours: '每天 09:00–17:00', day: 'D3', dayLabel: 'D3 周三 12:45 河畔下午茶', cid: '7973248076729349958', note: '欢欢推荐胡萝卜蛋糕，萍河东岸安静咖啡馆，逛完瓦洛洛市场过来坐下歇脚。' },
+      { idx: 33, name: 'Mai Hotel (全程住宿大本营)', cat: '景点/寺庙', rating: '★4.5 (333)', hours: '入住 14:00 / 退房 12:00', day: 'D1', dayLabel: '全程住宿 (宁曼北口)', cid: '8244194276610749566', note: '199/9 Huay Kaew Rd，离机场 15 分钟、MAYA 步行 5 分钟。建议备耳塞、要高层安静房。' }
+    ];
+
+    const PHRASES = [
+      { label: '🏨 给司机看：回 Mai Hotel 酒店', thai: 'ไป โรงแรม ไหม โฮเทล (199/9 ถนนห้วยแก้ว ใกล้เมญ่า)', pron: 'Pai Mai Hotel, Huay Kaew Rd (Near MAYA)' },
+      { label: '🌶️ 点菜：不要辣（给妈妈点菜必用）', thai: 'ไม่เผ็ด เลยค่ะ', pron: 'Mai Phet Loi Ka（完全不要辣）' },
+      { label: '🌶️ 点菜：微辣一点点', thai: 'เผ็ดน้อยมากๆ ค่ะ', pron: 'Phet Noi Mak Mak Ka（一点点微辣）' },
+      { label: '🧋 买泰茶/果昔：少甜少糖', thai: 'หวานน้อย ค่ะ', pron: 'Wan Noi Ka（少甜）' },
+      { label: '💆‍♀️ 按摩：请轻一点', thai: 'เบาๆ หน่อยค่ะ', pron: 'Bao Bao Noi Ka（请轻一点）' },
+      { label: '💆‍♀️ 按摩：请重点按肩颈/小腿', thai: 'เน้น บ่าไหล่ และ น่อง ค่ะ', pron: 'Nen Ba-Lai Lae Nong Ka' },
+      { label: '🍲 小火锅/米粉：不要内脏（猪肝猪肠）', thai: 'ไม่เอาเครื่องใน ค่ะ', pron: 'Mai Ao Khrueang-Nai Ka（不要内脏）' },
+      { label: '🌿 点菜：不要香菜', thai: 'ไม่ใส่ผักชี ค่ะ', pron: 'Mai Sai Phak-Chi Ka' },
+      { label: '💵 结账：买单，谢谢', thai: 'เช็คบิลด้วยค่ะ ขอบคุณค่ะ', pron: 'Check Bin Duay Ka, Khop Khun Ka' }
+    ];
+
+    let currentDayIdx = 0;
+    let currentStopIdx = 0;
+    let currentCat = '全部';
+    let doneSet = new Set();
+    try {
+      const saved = JSON.parse(localStorage.getItem('cm_done_v1') || '[]');
+      doneSet = new Set(saved);
+    } catch (e) {}
+
+    function toggleDone(key, ev) {
+      ev.stopPropagation();
+      if (doneSet.has(key)) doneSet.delete(key);
+      else doneSet.add(key);
+      try { localStorage.setItem('cm_done_v1', JSON.stringify([...doneSet])); } catch (e) {}
+      renderDayView();
+    }
+
+    function setMode(mode) {
+      ['itinerary', 'places', 'phrases', 'guide'].forEach(m => {
+        document.getElementById('view-' + m).classList.toggle('hidden', m !== mode);
+        document.getElementById('nav-' + m).classList.toggle('active', m === mode);
+      });
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function selectDay(dIdx, sIdx = 0) {
+      currentDayIdx = dIdx;
+      currentStopIdx = sIdx;
+      renderDayTabs();
+      renderDayView();
+    }
+
+    function selectStop(sIdx) {
+      currentStopIdx = sIdx;
+      renderMap();
+      renderActiveStopPanel();
+      DAYS[currentDayIdx].stops.forEach((s, i) => {
+        const el = document.getElementById('stop-card-' + i);
+        if (el) {
+          el.classList.toggle('selected', i === sIdx);
+        }
+      });
+    }
+
+    function renderDayTabs() {
+      document.getElementById('day-tabs').innerHTML = DAYS.map((d, i) => `
+        <button onclick="selectDay(${i}, 0)" class="day-btn ${i === currentDayIdx ? 'active' : ''}">
+          <div class="d-top">${d.id} · ${d.date}</div>
+          <div class="d-sub">${d.shortTitle}</div>
+        </button>
+      `).join('');
+    }
+
+    function project(lat, lng) {
+      if (lat > 18.85) {
+        const x = 415 + ((lng - 98.88) / 0.22) * 115;
+        const y = 85 - ((lat - 19.04) / 0.18) * 60;
+        return { x: Math.max(400, Math.min(540, x)), y: Math.max(24, Math.min(88, y)) };
+      }
+      const minLat = 18.767, maxLat = 18.811;
+      const minLng = 98.931, maxLng = 99.011;
+      const x = 24 + ((lng - minLng) / (maxLng - minLng)) * 512;
+      const y = 336 - ((lat - minLat) / (maxLat - minLat)) * 312;
+      return { x: Math.max(20, Math.min(540, x)), y: Math.max(20, Math.min(340, y)) };
+    }
+
+    function renderMap() {
+      const svg = document.getElementById('city-map');
+      const day = DAYS[currentDayIdx];
+      const dark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+      const bgFill = dark ? '#262624' : '#f1f5f9';
+      const mtnFill = dark ? '#1f2924' : '#e2e8f0';
+      const txtColor = dark ? '#e7e5e4' : '#1c1917';
+      const mutColor = dark ? '#a8a29e' : '#64748b';
+      const insetBg = dark ? '#1f1f1d' : '#ffffff';
+
+      const hotelPt = project(18.80289, 98.96436);
+      const moatNW = project(18.7958, 98.9775);
+      const moatSE = project(18.7815, 98.9935);
+      const moatW = moatSE.x - moatNW.x;
+      const moatH = moatSE.y - moatNW.y;
+      const r1 = project(18.811, 98.999);
+      const r2 = project(18.792, 99.002);
+      const r3 = project(18.778, 99.000);
+      const r4 = project(18.767, 98.996);
+
+      let html = `
+        <rect x="0" y="0" width="560" height="360" rx="10" fill="${bgFill}" />
+        <path d="M0,0 L145,0 Q165,180 115,360 L0,360 Z" fill="${mtnFill}" />
+        <text x="14" y="30" font-size="12" fill="${mutColor}" font-weight="600">⛰️ 素贴山半山</text>
+        <path d="M${r1.x},${r1.y} Q${r2.x},${r2.y} ${r3.x},${r3.y} T${r4.x},${r4.y}" stroke="#3b82f6" stroke-width="8" fill="none" stroke-linecap="round" opacity="0.35" />
+        <text x="${r2.x - 18}" y="346" font-size="12" fill="${mutColor}">🌊 萍河</text>
+        <rect x="${moatNW.x}" y="${moatNW.y}" width="${moatW}" height="${moatH}" rx="6" fill="none" stroke="#3b82f6" stroke-width="3.5" opacity="0.55" />
+        <text x="${moatNW.x + moatW/2}" y="${moatNW.y + moatH/2 + 4}" text-anchor="middle" font-size="12" fill="${mutColor}" font-weight="600">古城区</text>
+        <circle cx="${project(18.80658, 98.95178).x}" cy="${project(18.80658, 98.95178).y}" r="8" fill="#3b82f6" opacity="0.35" />
+        <g opacity="${day.id === 'D4' ? '1' : '0.45'}">
+          <rect x="386" y="10" width="164" height="86" rx="8" fill="${insetBg}" stroke="#94a3b8" stroke-width="1" />
+          <text x="394" y="28" font-size="12" fill="${mutColor}" font-weight="600">🐘 北郊湄登县(车程1h)</text>
+        </g>
+      `;
+
+      const pts = [hotelPt, ...day.stops.map(s => project(s.lat, s.lng))];
+      html += `<polyline points="${pts.map(p => p.x.toFixed(1)+','+p.y.toFixed(1)).join(' ')}" fill="none" stroke="#ea580c" stroke-width="2.5" stroke-dasharray="5,4" opacity="0.85" />`;
+
+      html += `
+        <g transform="translate(${hotelPt.x}, ${hotelPt.y})">
+          <circle r="11" fill="#0f766e" stroke="#ffffff" stroke-width="2" />
+          <text y="4" text-anchor="middle" font-size="12" fill="#ffffff" font-weight="bold">住</text>
+          <text x="14" y="4" font-size="12" fill="${txtColor}" font-weight="700">Mai Hotel</text>
+        </g>
+      `;
+
+      day.stops.forEach((s, idx) => {
+        const p = project(s.lat, s.lng);
+        const sel = idx === currentStopIdx;
+        const shortName = s.name.split(/[（(＋+→]/)[0].trim().slice(0, 9);
+        const lx = p.x > 420 ? -16 : 16;
+        const anc = p.x > 420 ? 'end' : 'start';
+        html += `
+          <g transform="translate(${p.x}, ${p.y})" onclick="selectStop(${idx})" style="cursor:pointer;">
+            ${sel ? `<circle r="19" fill="#ea580c" opacity="0.22" />` : ''}
+            <circle r="${sel ? 14 : 11}" fill="${sel ? '#ea580c' : '#2563eb'}" stroke="#ffffff" stroke-width="2" />
+            <text y="4" text-anchor="middle" font-size="12" fill="#ffffff" font-weight="bold">${s.num}</text>
+            <text x="${lx}" y="4" text-anchor="${anc}" font-size="12" fill="${txtColor}" font-weight="700">${shortName}</text>
+          </g>
+        `;
+      });
+      svg.innerHTML = html;
+    }
+
+    function renderActiveStopPanel() {
+      const day = DAYS[currentDayIdx];
+      const s = day.stops[currentStopIdx];
+      document.getElementById('active-stop-panel').innerHTML = `
+        <div>
+          <div style="display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:8px;">
+            <span class="badge">第 ${s.num} 站 · ${s.time}</span>
+            <span class="muted">${s.rating}</span>
+          </div>
+          <div style="font-size:15px;font-weight:700;margin-bottom:6px;">${s.name}</div>
+          <div class="muted" style="line-height:1.6;">
+            <div>🕒 <b>开放：</b>${s.hours}</div>
+            <div>🚕 <b>交通：</b>${s.transport}</div>
+            <div>⏱️ <b>停留：</b>${s.stay}</div>
+          </div>
+          <p style="font-size:12px;margin:10px 0 0;padding-top:8px;border-top:1px solid rgba(128,128,128,0.2);line-height:1.55;">${s.intro}</p>
+        </div>
+        <div style="display:flex;justify-content:space-between;align-items:center;gap:8px;margin-top:12px;padding-top:10px;border-top:1px solid rgba(128,128,128,0.2);">
+          <a href="https://maps.google.com/?cid=${s.cid}" target="_blank" rel="noopener" class="btn-teal">📍 打开 Google Maps</a>
+          <div style="display:flex;gap:6px;">
+            <button onclick="selectStop(${Math.max(0, currentStopIdx - 1)})" ${currentStopIdx === 0 ? 'disabled' : ''} class="btn-outline">上一站</button>
+            <button onclick="selectStop(${Math.min(day.stops.length - 1, currentStopIdx + 1)})" ${currentStopIdx === day.stops.length - 1 ? 'disabled' : ''} class="btn-outline">下一站</button>
+          </div>
+        </div>
+      `;
+    }
+
+    function renderDayView() {
+      const day = DAYS[currentDayIdx];
+      document.getElementById('day-badge').textContent = day.id + ' · ' + day.date;
+      document.getElementById('day-title').textContent = day.title;
+      document.getElementById('day-subtitle').textContent = day.subtitle;
+      document.getElementById('day-route-btn').href = day.routeUrl;
+      renderMap();
+      renderActiveStopPanel();
+
+      document.getElementById('timeline-container').innerHTML = day.stops.map((s, idx) => {
+        const key = day.id + '-' + s.num;
+        const isDone = doneSet.has(key);
+        const backupsHtml = (s.backups && s.backups.length)
+          ? `<div style="margin-top:10px;padding-top:8px;border-top:1px solid rgba(128,128,128,0.18);">
+              <div class="muted" style="font-weight:600;margin-bottom:4px;">🔗 顺路餐厅 / 备选点位（点开直接导航）：</div>
+              <div>${s.backups.map(b => `<a href="https://maps.google.com/?cid=${b.cid}" target="_blank" rel="noopener" onclick="event.stopPropagation()" class="backup-chip">📍 <b>${b.name}</b> · ${b.note}</a>`).join('')}</div>
+            </div>`
+          : '';
+        return `
+          <div id="stop-card-${idx}" onclick="selectStop(${idx})" class="stop-card ${idx === currentStopIdx ? 'selected' : ''} ${isDone ? 'done' : ''}">
+            <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;padding-bottom:10px;border-bottom:1px solid rgba(128,128,128,0.18);">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
+                <span class="num-dot">${s.num}</span>
+                <b style="font-size:14px;">${s.time}</b>
+                <span class="badge-soft">⏱️ ${s.stay}</span>
+              </div>
+              <div style="display:flex;gap:6px;align-items:center;">
+                <button onclick="toggleDone('${key}', event)" class="btn-outline">${isDone ? '✅ 已打卡' : '⬜ 打卡'}</button>
+                <a href="https://maps.google.com/?cid=${s.cid}" target="_blank" rel="noopener" onclick="event.stopPropagation()" class="btn-teal">📍 导航</a>
+              </div>
+            </div>
+            <div style="font-size:16px;font-weight:700;margin:10px 0 6px;">${s.name}</div>
+            <div class="muted" style="line-height:1.6;">
+              <div>🚕 <b>交通：</b>${s.transport}</div>
+              <div>🕒 <b>开放：</b>${s.hours} · ${s.rating}</div>
+            </div>
+            <div class="detail-box">
+              <div><b>📖 介绍：</b>${s.intro}</div>
+              <div style="white-space:pre-line;"><b>🎯 怎么玩（省力贴士）：</b>${s.howToPlay}</div>
+              ${s.food ? `<div style="white-space:pre-line;"><b>🍽️ 吃什么 & 必点：</b>${s.food}</div>` : ''}
+            </div>
+            ${backupsHtml}
+          </div>
+        `;
+      }).join('');
+    }
+
+    function setCat(c) { currentCat = c; renderPlaces(); }
+    function jumpToDay(dayId) {
+      const idx = DAYS.findIndex(d => d.id === dayId);
+      if (idx >= 0) { setMode('itinerary'); selectDay(idx, 0); }
+    }
+
+    function renderPlaces() {
+      const cats = ['全部', '景点/寺庙', '正餐/小吃', '咖啡/甜品', '按摩/购物'];
+      document.getElementById('cat-filters').innerHTML = cats.map(c => {
+        const cnt = c === '全部' ? SAVED_33.length : SAVED_33.filter(p => p.cat === c).length;
+        return `<button onclick="setCat('${c}')" class="cat-btn ${c === currentCat ? 'active' : ''}">${c} (${cnt})</button>`;
+      }).join('');
+
+      const q = (document.getElementById('place-search').value || '').trim().toLowerCase();
+      const list = SAVED_33.filter(p => (currentCat === '全部' || p.cat === currentCat) && (!q || (p.name + p.note + p.dayLabel + p.hours).toLowerCase().includes(q)));
+
+      document.getElementById('places-grid').innerHTML = list.map(p => `
+        <div class="card" style="margin:0;display:flex;flex-direction:column;justify-content:space-between;">
+          <div>
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;">
+              <span class="badge-soft">#${p.idx} · ${p.cat}</span>
+              <span class="muted">${p.rating}</span>
+            </div>
+            <div style="font-size:15px;font-weight:700;margin-bottom:4px;">${p.name}</div>
+            <div class="muted" style="margin-bottom:6px;">🕒 ${p.hours}</div>
+            <div style="font-size:13px;line-height:1.55;">${p.note}</div>
+          </div>
+          <div style="display:flex;justify-content:space-between;align-items:center;gap:8px;margin-top:12px;padding-top:10px;border-top:1px solid rgba(128,128,128,0.18);">
+            <button onclick="jumpToDay('${p.day}')" class="btn-outline">📅 ${p.dayLabel}</button>
+            <a href="https://maps.google.com/?cid=${p.cid}" target="_blank" rel="noopener" class="btn-teal">📍 Google 地图</a>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function renderPhrases() {
+      document.getElementById('phrase-grid').innerHTML = PHRASES.map((p, i) => `
+        <div onclick="openModal(${i})" class="phrase-card">
+          <div class="muted" style="font-weight:600;margin-bottom:6px;">${p.label}</div>
+          <div style="font-size:19px;font-weight:800;margin-bottom:6px;">${p.thai}</div>
+          <div class="muted">发音：${p.pron}</div>
+        </div>
+      `).join('');
+    }
+
+    function openModal(i) {
+      const p = PHRASES[i];
+      document.getElementById('modal-label').textContent = p.label;
+      document.getElementById('modal-thai').textContent = p.thai;
+      document.getElementById('modal-pron').textContent = '发音提示：' + p.pron;
+      document.getElementById('phrase-modal').classList.remove('hidden');
+    }
+    function closeModal() { document.getElementById('phrase-modal').classList.add('hidden'); }
+
+    // Show Add-to-Home-Screen hint on iOS Safari if not already installed as PWA
+    const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+    const isStandalone = window.navigator.standalone === true;
+    if (isIOS && !isStandalone) {
+      document.getElementById('ios-hint').classList.remove('hidden');
+    }
+
+    renderDayTabs();
+    renderDayView();
+    renderPlaces();
+    renderPhrases();
+  </script>
+</body>
+</html>
